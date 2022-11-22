@@ -1,0 +1,129 @@
+{ 
+    "produtos": [
+    {
+        "id": 1, 
+        "titulo": "Capacete Stormtrooper", 
+        "preco": 60, 
+        "imagemDoProduto": "https://m.media-amazon.com/images/I/71kJWVXYDZL._AC_SX679_.jpg", 
+        "categoria": "StarWars" 
+    },
+    {
+        "id": 2, 
+        "titulo": "Miniatura Darthveider", 
+        "preco": 60, 
+        "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
+        "categoria": "StarWars" 
+    },
+    {
+        "id": 3, 
+        "titulo": "Miniatura Mestre Yoda", 
+        "preco": 60, 
+        "imagemDoProduto": "https://http2.mlstatic.com/D_NQ_NP_830635-MLB49150487549_022022-O.webp", 
+        "categoria": "StarWars" 
+    },
+    {
+        "id": 4, 
+        "titulo": "Mini Darthveider", 
+        "preco": 60, 
+        "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
+        "categoria": "StarWars" 
+    },
+    {
+        "id": 5, 
+        "titulo": "Mestre Yoda Miniatura", 
+        "preco": 60, 
+        "imagemDoProduto": "https://img.olx.com.br/images/28/284253407934295.jpg", 
+        "categoria": "StarWars" 
+    },
+    {
+        "id": 6, 
+        "titulo": "Miniatura Luke", 
+        "preco": 60, 
+        "imagemDoProduto": "https://m.media-amazon.com/images/I/41Uu0KIeZ6L._AC_SX569_.jpg", 
+        "categoria": "StarWars" 
+    },
+    {
+        "id": 7, 
+        "titulo": "Controle Branco Console", 
+        "preco": 70, 
+        "imagemDoProduto": "https://a-static.mlcdn.com.br/1500x1500/controle-com-fio-para-console-360-e-pc-slim-joystick-dex/yesshopeletronicos/12800064424/45a113b3f949c5761bb85b39ca02c250.jpg", 
+        "categoria": "consoles" 
+    },
+    {
+        "id": 8, 
+        "titulo": "Console e Controle", 
+        "preco": 70, 
+        "imagemDoProduto": "https://images.tcdn.com.br/img/img_prod/720337/console_xbox_series_s_512gb_ssd_1_controle_1013_1_4b3f3b18a1c2f098ff3c8d033f5bfb9f.jpg", 
+        "categoria": "consoles" 
+    },
+    {
+        "id": 9, 
+        "titulo": "Nintendo Switch", 
+        "preco": 70, 
+        "imagemDoProduto": "https://t.ctcdn.com.br/G1WZDFACuVCfbHxwSVoPlN00NWM=/fit-in/400x400/filters:format(webp):fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i413091.png", 
+        "categoria": "consoles" 
+    },
+    {
+        "id": 10, 
+        "titulo": "Playstation 4", 
+        "preco": 70, 
+        "imagemDoProduto": "https://http2.mlstatic.com/D_NQ_NP_797532-MLA51827540871_102022-O.webp", 
+        "categoria": "consoles" 
+    },
+    {
+        "id": 11, 
+        "titulo": "Game Boy", 
+        "preco": 70, 
+        "imagemDoProduto": "https://rihappy.vtexassets.com/arquivos/ids/4336953-800-auto?v=637934072382870000&width=800&height=auto&aspect=true", 
+        "categoria": "consoles" 
+    },
+    {
+        "id": 12, 
+        "titulo": "Console Nintendo Switch Azul e Vermelho", 
+        "preco": 70, 
+        "imagemDoProduto": "https://m.media-amazon.com/images/I/81hxAgURvcL._AC_SX679_.jpg", 
+        "categoria": "consoles" 
+    },
+    {
+        "id": 13, 
+        "titulo": "Camiseta Eren Jaeger", 
+        "preco": 50, 
+        "imagemDoProduto": "https://cf.shopee.com.br/file/b6b99b6d9fd2143a40499d011b13f1af", 
+        "categoria": "diversos" 
+    },
+    {
+        "id": 14, 
+        "titulo": "Pikachu", 
+        "preco": 50, 
+        "imagemDoProduto": "https://cf.shopee.com.br/file/5b38b5fd1ad3075e6135d4743128626e", 
+        "categoria": "diversos" 
+    },
+    {
+        "id": 15, 
+        "titulo": "Sonic", 
+        "preco": 50, 
+        "imagemDoProduto": "https://a-static.mlcdn.com.br/800x560/boneco-elastico-sonic-stretch-heroes-of-goo-jit-zu-sunny/japacolecionaveis/14147p/a7e4adf5407e44ee47b89482285e9965.jpg", 
+        "categoria": "diversos" 
+    },
+    {
+        "id": 16, 
+        "titulo": "Boneca LadyBug", 
+        "preco": 50, 
+        "imagemDoProduto": "https://rihappy.vtexassets.com/arquivos/ids/310269/100125419-1860-boneca-miraculous-ladybug-55-cm-baby-brink-5051006_1.jpg?v=636034144139930000", 
+        "categoria": "diversos" 
+    },
+    {
+        "id": 17, 
+        "titulo": "Miniaturas Harry Potter", 
+        "preco": 50, 
+        "imagemDoProduto": "https://cf.shopee.com.br/file/6e4bdc4a9af62187eb44a29b0a1254c6", 
+        "categoria": "diversos" 
+    },
+    {
+        "id": 18, 
+        "titulo": "Miniatura Todoroki", 
+        "preco": 50, 
+        "imagemDoProduto": "https://www.atacadocollections.com/img/g/boneco-funko-5-star-my-hero-academia-todoroki-shoto-img_81375_1.jpg", 
+        "categoria": "diversos" 
+    }
+]}
