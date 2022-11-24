@@ -41,6 +41,10 @@ const InputDeBusca = styled.input`
 const IconePesquisa = styled.img`
     @media (max-width: 900px){
         align-items: left;
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
     }
 
     @media (min-width: 900px){
@@ -51,8 +55,7 @@ const IconePesquisa = styled.img`
 const InputBusca = () => {
     return (
         <>
-            <InputDeBusca placeholder="O que deseja encontrar?">
-            </InputDeBusca>
+            <InputDeBusca placeholder="O que deseja encontrar?" />
             <IconePesquisa src={Lupa}/>
         </>
        

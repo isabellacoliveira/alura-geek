@@ -1,5 +1,4 @@
-{ 
-    "produtos": [
+[
     {
         "id": 1, 
         "titulo": "Capacete Stormtrooper", 
@@ -126,4 +125,4 @@
         "imagemDoProduto": "https://www.atacadocollections.com/img/g/boneco-funko-5-star-my-hero-academia-todoroki-shoto-img_81375_1.jpg", 
         "categoria": "diversos" 
     }
-]}
+]

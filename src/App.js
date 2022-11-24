@@ -1,18 +1,11 @@
-import CadastraProduto from 'components/AdicionarNovoProduto';
-import IniciarSessao from 'components/IniciarSessão';
-import './App.css';
-import Banner from './components/Banner';
-import Cabecalho from './components/Cabecalho';
-import Foot from './components/Rodape';
+import React from 'react';
+import AppRoutes from 'routes';
+
 
 function App() {
   return (
     <>
-    <Cabecalho />
-    <Banner />
-    <IniciarSessao />
-    <CadastraProduto />
-    <Foot />
+    <AppRoutes />
     </>
   )
 }

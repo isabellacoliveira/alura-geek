@@ -5,3 +5,77 @@ reportweb
 setuptests
 logo 
 apptest 
+
+imagem 
+alinhar botao mandar msg a esquerda
+responsividade da home 
+
+
+import styles from './NaoEncontrada.module.css';
+// import error404 from 'assets/erro_404.png'
+// import BotaoPrincipal from 'componentes/BotaoPrincipal';
+// import { useNavigate } from 'react-router-dom';
+
+// export default function NaoEncontrada(){
+//     const navegar = useNavigate(); 
+//     return(
+//         <>
+//         <div className={styles.conteudoContainer}>
+//             <span className={styles.texto404}>404</span>
+
+//             <h1 className={styles.titulo}>
+//                     Ops! Página não encontrada.
+//             </h1>
+//             <p className={styles.paragrafo}>
+//             Tem certeza de que era isso que você estava procurando? 
+//             </p>
+//             <p className={styles.paragrafo}>
+//             Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
+//             </p>
+//             <div 
+//             className={styles.botaoContainer}
+//             // vamos passar uma função callback
+//             // o menos 1 faz com que voltemos para a página anterior
+//                 onClick={() => navegar(-1)}
+//             >
+//                 <BotaoPrincipal tamanho="lg">Voltar</BotaoPrincipal>
+//             </div>
+//             <img 
+//                 className={styles.imagemCachorro}
+//                 src={error404}
+//                 alt="Cachorro de óculos vestido como humano"
+//             />
+//         </div>
+//         <div className={styles.espacoEmBranco}>
+
+//         </div>
+//         </>
+
+        
+//     )
+// }
+
+// .botaoPrincipal {
+//     display: inline-block;
+//     border-radius: 24px;
+//     padding: 0.75rem 1.5rem;
+//     font-size: 1.125rem;
+//     line-height: 1.125rem;
+//     background-color: var(--azul-medio);
+//     color: var(--branco);
+//     border: 3px solid var(--azul-medio);
+//     cursor: pointer;
+//     transition: 0.2s;
+// }
+ 
+// .botaoPrincipal:hover {
+//     border: 3px solid var(--azul-escuro);
+// }
+
+// /* vamos adicionar uma classe ao botao principal, quero aplicar
+// alguns estilos quando meu botão tiver a classe lg (large) */
+// .botaoPrincipal.lg{
+//     padding: 1.5rem 2.74rem;
+//     font-size: 1.5rem;
+//     line-height: 1.125rem;
+// }

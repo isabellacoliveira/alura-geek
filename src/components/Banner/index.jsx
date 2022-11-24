@@ -1,6 +1,6 @@
 import {React} from "react";
 import styled from 'styled-components';
-import BannerImg from '../../assets/Hero.png'
+
 
 const StyledBanner = styled.div`
     width: 100%;
@@ -47,9 +47,12 @@ const Titulo1 = styled.h1`
     color: #fff;
     font-family: 'Raleway';
     font-style: normal;
+    /* font-size: 10px; */
 
     @media(max-width: 900px){
         padding-top: 80px;
+        font-size: 15px;
+        width: 50%;
     }
 
     @media(min-width: 900px){
@@ -64,7 +67,8 @@ const Titulo2 = styled.h5`
     font-style: normal;
 
     @media(max-width: 900px){
-        
+        font-size: 10px;
+        width: 50%;
     }
 
     @media(min-width: 900px){
@@ -76,7 +80,7 @@ const Titulo2 = styled.h5`
 export const Banner = () => {
     return (
         <StyledBanner>
-            <BannerHero src={BannerImg}>
+            <BannerHero>
                 <Titulo1>Dezembro Promocional</Titulo1>
                     <Titulo2>Produtos selecionados com 33% de desconto</Titulo2>
                 <BotaoVerConsole>Ver Consoles</BotaoVerConsole>

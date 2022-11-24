@@ -1,3 +1,15 @@
-    // export default function Post() {
-    //     return (<h1>oi</h1>)
-    // }
+// import CadastraProduto from "components/AdicionarNovoProduto";
+// import FaleConosco from "components/FaleConosco";
+
+import CadastraProduto from "components/AdicionarNovoProduto";
+import FaleConosco from "components/FaleConosco";
+
+export default function CadastroProduto(){
+    return(
+        <>
+         <CadastraProduto />
+        <FaleConosco />
+        </>
+       
+    )
+}

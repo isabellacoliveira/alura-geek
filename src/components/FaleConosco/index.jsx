@@ -1,9 +1,9 @@
 import {React} from "react";
 import styled from 'styled-components';
 import LogoAluraGeek from '../../assets/Logo.png';
+import styles from 'components/CampoTexto'
 
 const Logo = styled.img`
-    /* width: 25%; */
     width: 100px;
     height: 40px;
     margin-right: 100px;
@@ -52,36 +52,64 @@ const DivFaleConosco = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
 
     @media (max-width: 900px){
         align-items: center;
-        /* justify-content: center; */
+        justify-content: center;
         width: 100%;
+        height: 350px;
     }
 
     @media (min-width: 900px){
         width: 50%;
     }
+    
 
+`
+const InputMensagem = styled.textarea`
+        background: #FFFFFF;
+        border-radius: none;
+        border: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        outline: none;
+        box-shadow: 0px 2px #C8C8C8;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        border-radius: 4px 4px 0px 0px;
+        margin-top: 20px;
+        height: 90px;
+
+        @media (max-width: 900px) {
+            width: 300px;
+        }
+
+        @media (min-width: 900px) {
+            width: 410px;
+        }
 `
 
 const InputNome = styled.input`
-    background: #FFFFFF;
-    border-radius: none;
-    border: none;
-    font-family: 'Raleway';
-    font-style: normal;
-    padding-left: 10px;
-    outline: none;
-    box-shadow: 0px 2px #C8C8C8;
-    margin-right: 10px;
-    padding-left: 20px;
-    height: 50px;
-    box-sizing: border-box;
-    border-radius: 4px 4px 0px 0px ;
+        background: #FFFFFF;
+        border-radius: none;
+        border: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        outline: none;
+        box-shadow: 0px 2px #C8C8C8;
+        margin-right: 10px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        border-radius: 4px 4px 0px 0px ;
+        height: 50px;
 
     @media (max-width: 900px){
-        width: 350px;
+        width: 300px;
     }
 
     @media (min-width: 900px){
@@ -89,37 +117,7 @@ const InputNome = styled.input`
     }
 
 `
-const InputMensagem = styled.input`
-    background: #FFFFFF;
-    border-radius: none;
-    height: 80px;
-    border: none;
-    font-family: 'Raleway';
-    font-style: normal;
-    height: 80px;
-    padding-left: 10px;
-    outline: none;
-    box-shadow: 0px 2px #C8C8C8;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 4px 4px 0px 0px ;
-
-    @media (max-width: 900px) {
-        width: 350px;
-    }
-
-    @media (min-width: 900px) {
-        width: 410px;
-    }
-    
-    
-`
-// const TituloFaleConosco = styled.p`
-    
-// `
-
-const BotaoEnviarMensagem = styled.button`
+ const BotaoEnviarMensagem = styled.button`
     background: #2A7AE4;
     border: none;
     outline: none;
@@ -128,15 +126,11 @@ const BotaoEnviarMensagem = styled.button`
     text-align: center;
     color: #FFFFFF;
     margin-top: 10px;
-    width: 120px;
-    
+    width: 150px;
+    padding: 15px 15px 15px 15px;
 
     @media (max-width: 900px){
         height: 50px;
-    }
-
-    @media (min-width: 900px){
-        height: 51px;
     }
 `
 
@@ -170,13 +164,20 @@ const FaleConosco = () => {
             </LinksPaginas>
                
     </DivLogoELinks>
-       
     
     <DivFaleConosco>        
                 <p>Fale conosco</p>
-                    <InputNome label="Nome"/>
-                    <InputMensagem placeholder="Escreva sua mensagem"></InputMensagem>
-                <BotaoEnviarMensagem>Enviar mensagem</BotaoEnviarMensagem>
+                    <InputNome 
+                            obrigatorio={true}
+                            label="Nome"
+                            placeholder="Nome"
+                            />
+                    <InputMensagem
+                             obrigatorio={true}
+                             placeholder="Escreva sua mensagem" 
+                             />
+                <BotaoEnviarMensagem
+                    >Enviar mensagem</BotaoEnviarMensagem>
             </DivFaleConosco>
         </Tudo>
     
@@ -186,3 +187,21 @@ const FaleConosco = () => {
 }
 
 export default FaleConosco; 
+
+// import styles from './BotaoPrincipal.module.css';
+
+// export default function BotaoPrincipal({children, tamanho}){
+//     // esse botão tem os mesmos estilos do botão presente nos posts
+//     // vamos então definir um só componente para ser botão
+//     // agora vamos trocar o botão presente nos cards dos posts 
+//     return (
+//         <button className={`
+//                 ${styles.botaoPrincipal}
+//                 ${styles[tamanho]}
+//         `}>
+//             {/* podemos adicionar uma prop no botao principal, dizendo o nome da classe que você quer adicionar  */}
+//             {/* se o valor de tamanho for lg  */}
+//             { children }
+//         </button>
+//     )
+// }

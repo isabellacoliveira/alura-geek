@@ -9,6 +9,9 @@ const CadastroInicioSessao = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
 
     @media (min-width: 900px){
         input {
@@ -58,7 +61,7 @@ const CadastroInicioSessao = styled.div`
         color: #FFFFFF;
         border: none;
         background: #2A7AE4;
-        height: 30px;
+        height: 50px;
         margin-top: 20px;
     }
 `

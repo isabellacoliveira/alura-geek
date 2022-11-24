@@ -16,7 +16,6 @@ const DesenvolvidoPor = styled.footer`
 export const Foot = () => {
     return (
         <Rodape>
-            <FaleConosco />
             <DesenvolvidoPor>
                  Desenvolvido por Isabella
             </DesenvolvidoPor>

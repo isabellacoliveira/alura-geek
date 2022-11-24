@@ -3,17 +3,32 @@ import styled from 'styled-components';
 const CadastroNovoProduto = styled.div`
     background: #E5E5E5;
     text-align: left;
-    height: 400px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    
 
     @media (min-width: 900px){
         input {
             height: 50px;
             width: 420px;
         }
+
+        button {
+            width: 420px;
+            height: 30px;
+       }
+
+       select {
+            width: 420px;
+       }
     }
 
     @media (max-width: 900px){                
@@ -22,9 +37,19 @@ const CadastroNovoProduto = styled.div`
             width: 50%;
             margin-top: 100px;    
         }
+
+        button {
+            width: 200px;
+            height: 70px;
+            margin-top: 20px;
+        }
+
+        select {
+            width: 170px;
+        }
     }
 
-    input{
+    input, select {
         background: #FFFFFF;
         border: none;
         font-family: 'Raleway';
@@ -40,24 +65,11 @@ const CadastroNovoProduto = styled.div`
         padding-top: 20px;
     }
 
-    @media (min-width: 900px){
-       button {
-            width: 420px;
-       }
-    }
-
-    @media (max-width: 900px){
-        button {
-            width: 100px;
-            margin-top: 20px;
-        }
-    }
-
     button{
         color: #FFFFFF;
         border: none;
         background: #2A7AE4;
-        height: 30px;
+     
         margin-top: 20px;
     }
 `
@@ -67,7 +79,11 @@ const CadastraProduto = () => {
         <CadastroNovoProduto>
             <p>Adicionar novo produto</p>
             <input placeholder='Url da imagem'></input>
-            <input placeholder='Categorias'></input>
+            <select placeholder='Categorias'>
+                <option>Star Wars</option>
+                <option>Consoles</option>
+                <option>Diversos</option>
+            </select>
             <input placeholder='Nome do produto'></input>
             <input placeholder='Preço do produto'></input>
             <input placeholder='Descrição do produto'></input>

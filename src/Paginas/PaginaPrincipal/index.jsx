@@ -1,15 +1,18 @@
-// import Banner from './components/Banner';
-// import Cabecalho from './components/Cabecalho';
-// import Foot from './components/Rodape';
+import FaleConosco from "components/FaleConosco";
+import ContemPosts from "components/ProdutosPorCategoria";
+import VerJson from "components/ProdutosPorCategoria";
 
-// function PaginaPrincipal() {
-//   return (
-//     <>
-//     <Cabecalho />
-//     <Banner />
-//     <Foot />
-//     </>
-//   )
-// }
+const { default: Banner } = require("components/Banner");
 
-// export default PaginaPrincipal;
+
+function PaginaPrincipal() {
+  return (
+    <>
+        <Banner />
+        <ContemPosts />
+        <FaleConosco />
+    </>
+  )
+}
+
+export default PaginaPrincipal;

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LogoAluraGeek from '../../assets/Logo.png';
+import { useLocation } from 'react-router-dom'
 import styled from 'styled-components';
 import InputBusca from "components/Busca";
 import BotaoLogin from "components/BotaoDeLogin";
-// import Lupazinha from '../../assets/lupinha.png'
 
 const StyledCabecalho = styled.nav`
     text-align: center;
@@ -34,12 +34,26 @@ const Logo = styled.img`
     }
 `
 
+const TrocaLado = styled.div`
+    @media (max-width: 900px){
+        flex-direction: row-reverse;
+        display: flex;
+    }
+`
+
 const Cabecalho = () => {
+    const {pathname} = useLocation()
+    console.log(pathname)
+    // const navegar = window.location.path; 
+
     return (
         <StyledCabecalho>
             <Logo src={LogoAluraGeek} />
-            <InputBusca />
-            <BotaoLogin />
+            <TrocaLado>
+                <InputBusca />
+                {/* e de produtos  */}
+                {pathname !== '/login' ? <BotaoLogin /> : null} 
+            </TrocaLado>
         </StyledCabecalho>
     );
 }; 

@@ -1,11 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const BotaoDeLogin = styled.button`
     border: 1px solid #2A7AE4;
     box-sizing: border-box;
-    width: 166px;
     height: 40px;
     font-family: 'Raleway';
     font-style: normal;
@@ -17,16 +16,20 @@ const BotaoDeLogin = styled.button`
     
     @media (max-width: 900px){
         margin-right: 10px;
+        width: 150px;
     }
     
     @media (min-width: 900px){
        margin-right: 100px;
+       width: 166px;
     }
 `
 
 const BotaoLogin = () => {
     return(
-        <BotaoDeLogin>Login</BotaoDeLogin>
+        <BotaoDeLogin>
+            <Link to="/login" replace>Login</Link>
+        </BotaoDeLogin>
     )
 }
 

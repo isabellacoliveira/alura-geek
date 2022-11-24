@@ -1,0 +1,25 @@
+.BotaoCadastraProduto {
+    background: #2A7AE4;
+    border: none;
+    outline: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    /* width: 150px; */
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #464646;
+}
+
+@media (max-width: 900px){
+    .BotaoCadastraProduto {
+            height: 50px;
+    }
+}
