@@ -1,0 +1,108 @@
+article img {
+    width: 75%; 
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+li{
+    list-style: none;
+}
+
+.grupoProdutosSimilares{
+    padding-bottom: 100px;
+}
+ 
+article {
+    background: #E5E5E5;
+}
+
+.titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.preco {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+}
+ 
+.postConteudoContainer {
+
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.ProdutosSimilares {
+        font-family: var(--fonte-secundaria);
+        color: #363031;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+}
+
+
+.postsRecomendados {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+@media (min-width: 900px) {
+    article {
+        display: flex;
+        flex-direction: row;
+        margin-right: 300px;
+        margin-left: 200px;
+    }
+    
+    .divDaImagem {
+        width: 50%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .conteudoDoProduto {
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+        margin-top: 160px;
+    }
+    .postConteudoContainer{
+        padding-right: 60px;
+    }
+    .ProdutosSimilares{
+        padding-left: 280px;
+    }
+}
+ 
+@media (max-width: 900px) {
+     .titulo {
+        height: 104px;
+    }
+ 
+    .titulo {
+        padding: 0 1rem;
+        font-size: 2rem;
+    }
+ 
+    .postConteudoContainer {
+        padding: 2rem 1rem 1.5rem;
+    }
+    article img {
+      width: 100%;
+    }
+    .preco {
+        padding-left: 15px;
+    }
+    .ProdutosSimilares{
+        padding-left: 60px;
+    }
+}

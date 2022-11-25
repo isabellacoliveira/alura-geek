@@ -1,5 +1,5 @@
 import styles from './NaoEncontrada.module.css';
-import erro404 from 'assets/error_404.jpg'
+import erro404 from 'assets/errroooo.webp'
 import { useNavigate } from 'react-router-dom';
 
 export default function NaoEncontrada() {
@@ -16,9 +16,6 @@ export default function NaoEncontrada() {
 
                 <p className={styles.paragrafo}>
                     Tem certeza de que era isso que você estava procurando?
-                </p>
-
-                <p className={styles.paragrafo}>
                     Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
 
@@ -32,7 +29,7 @@ export default function NaoEncontrada() {
                 <img
                     className={styles.imagemCachorro}
                     src={erro404}
-                    alt="Cachorro de óculos e vestido como humano"
+                    alt="cogumelo do mario"
                 />
             </div>
             <div className={styles.espacoEmBranco}></div>

@@ -14,6 +14,14 @@ const BotaoDeLogin = styled.button`
     color: #2A7AE4;
     background-color: #fff;
     
+    .BotaoLogin{
+        text-decoration: none;
+        color: #2A7AE4;
+        font-family: 'Raleway';
+        font-style: normal;
+
+    }
+
     @media (max-width: 900px){
         margin-right: 10px;
         width: 150px;
@@ -28,7 +36,7 @@ const BotaoDeLogin = styled.button`
 const BotaoLogin = () => {
     return(
         <BotaoDeLogin>
-            <Link to="/login" replace>Login</Link>
+            <Link to="/login" className="BotaoLogin">Login</Link>
         </BotaoDeLogin>
     )
 }

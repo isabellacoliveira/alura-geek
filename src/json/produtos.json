@@ -1,128 +1,147 @@
-[
-    {
-        "id": 1, 
-        "titulo": "Capacete Stormtrooper", 
-        "preco": 60, 
-        "imagemDoProduto": "https://m.media-amazon.com/images/I/71kJWVXYDZL._AC_SX679_.jpg", 
-        "categoria": "StarWars" 
-    },
-    {
-        "id": 2, 
-        "titulo": "Miniatura Darthveider", 
-        "preco": 60, 
-        "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
-        "categoria": "StarWars" 
-    },
-    {
-        "id": 3, 
-        "titulo": "Miniatura Mestre Yoda", 
-        "preco": 60, 
-        "imagemDoProduto": "https://http2.mlstatic.com/D_NQ_NP_830635-MLB49150487549_022022-O.webp", 
-        "categoria": "StarWars" 
-    },
-    {
-        "id": 4, 
-        "titulo": "Mini Darthveider", 
-        "preco": 60, 
-        "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
-        "categoria": "StarWars" 
-    },
-    {
-        "id": 5, 
-        "titulo": "Mestre Yoda Miniatura", 
-        "preco": 60, 
-        "imagemDoProduto": "https://img.olx.com.br/images/28/284253407934295.jpg", 
-        "categoria": "StarWars" 
-    },
-    {
-        "id": 6, 
-        "titulo": "Miniatura Luke", 
-        "preco": 60, 
-        "imagemDoProduto": "https://m.media-amazon.com/images/I/41Uu0KIeZ6L._AC_SX569_.jpg", 
-        "categoria": "StarWars" 
-    },
-    {
-        "id": 7, 
-        "titulo": "Controle Branco Console", 
-        "preco": 70, 
-        "imagemDoProduto": "https://a-static.mlcdn.com.br/1500x1500/controle-com-fio-para-console-360-e-pc-slim-joystick-dex/yesshopeletronicos/12800064424/45a113b3f949c5761bb85b39ca02c250.jpg", 
-        "categoria": "consoles" 
-    },
-    {
-        "id": 8, 
-        "titulo": "Console e Controle", 
-        "preco": 70, 
-        "imagemDoProduto": "https://images.tcdn.com.br/img/img_prod/720337/console_xbox_series_s_512gb_ssd_1_controle_1013_1_4b3f3b18a1c2f098ff3c8d033f5bfb9f.jpg", 
-        "categoria": "consoles" 
-    },
-    {
-        "id": 9, 
-        "titulo": "Nintendo Switch", 
-        "preco": 70, 
-        "imagemDoProduto": "https://t.ctcdn.com.br/G1WZDFACuVCfbHxwSVoPlN00NWM=/fit-in/400x400/filters:format(webp):fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i413091.png", 
-        "categoria": "consoles" 
-    },
-    {
-        "id": 10, 
-        "titulo": "Playstation 4", 
-        "preco": 70, 
-        "imagemDoProduto": "https://http2.mlstatic.com/D_NQ_NP_797532-MLA51827540871_102022-O.webp", 
-        "categoria": "consoles" 
-    },
-    {
-        "id": 11, 
-        "titulo": "Game Boy", 
-        "preco": 70, 
-        "imagemDoProduto": "https://rihappy.vtexassets.com/arquivos/ids/4336953-800-auto?v=637934072382870000&width=800&height=auto&aspect=true", 
-        "categoria": "consoles" 
-    },
-    {
-        "id": 12, 
-        "titulo": "Console Nintendo Switch Azul e Vermelho", 
-        "preco": 70, 
-        "imagemDoProduto": "https://m.media-amazon.com/images/I/81hxAgURvcL._AC_SX679_.jpg", 
-        "categoria": "consoles" 
-    },
-    {
-        "id": 13, 
-        "titulo": "Camiseta Eren Jaeger", 
-        "preco": 50, 
-        "imagemDoProduto": "https://cf.shopee.com.br/file/b6b99b6d9fd2143a40499d011b13f1af", 
-        "categoria": "diversos" 
-    },
-    {
-        "id": 14, 
-        "titulo": "Pikachu", 
-        "preco": 50, 
-        "imagemDoProduto": "https://cf.shopee.com.br/file/5b38b5fd1ad3075e6135d4743128626e", 
-        "categoria": "diversos" 
-    },
-    {
-        "id": 15, 
-        "titulo": "Sonic", 
-        "preco": 50, 
-        "imagemDoProduto": "https://a-static.mlcdn.com.br/800x560/boneco-elastico-sonic-stretch-heroes-of-goo-jit-zu-sunny/japacolecionaveis/14147p/a7e4adf5407e44ee47b89482285e9965.jpg", 
-        "categoria": "diversos" 
-    },
-    {
-        "id": 16, 
-        "titulo": "Boneca LadyBug", 
-        "preco": 50, 
-        "imagemDoProduto": "https://rihappy.vtexassets.com/arquivos/ids/310269/100125419-1860-boneca-miraculous-ladybug-55-cm-baby-brink-5051006_1.jpg?v=636034144139930000", 
-        "categoria": "diversos" 
-    },
-    {
-        "id": 17, 
-        "titulo": "Miniaturas Harry Potter", 
-        "preco": 50, 
-        "imagemDoProduto": "https://cf.shopee.com.br/file/6e4bdc4a9af62187eb44a29b0a1254c6", 
-        "categoria": "diversos" 
-    },
-    {
-        "id": 18, 
-        "titulo": "Miniatura Todoroki", 
-        "preco": 50, 
-        "imagemDoProduto": "https://www.atacadocollections.com/img/g/boneco-funko-5-star-my-hero-academia-todoroki-shoto-img_81375_1.jpg", 
-        "categoria": "diversos" 
-    }
-]
+   
+ [
+        {
+            "id": 1, 
+            "titulo": "Capacete Stormtrooper", 
+            "preco": "R$ 60,00", 
+            "imagemDoProduto": "https://m.media-amazon.com/images/I/71kJWVXYDZL._AC_SX679_.jpg", 
+            "categoria": "StarWars",
+            "texto": "Os designs dos Stormtroopers tinham a intenção de parecer aterrorizantes, mas também super-legais, super-limpos, com os capacetes sendo caveiras muito estilizadas. Nos primeiros rascunhos das artes conceituais de Star Wars de Ralph McQuarrie, os Stormtroopers usariam sabres de luz e escudos de mão como armas comuns não limitadas aos Jedi ou aos Sith. George Lucas, ao compor informações básicas em 1977, afirmou que as mulheres existiam no efetivo do Corpo de Stormtroopers, embora houvessem poucas na Estrela da Morte. Ele sugeriu que elas eram numerosas em outras unidades."
+        },
+        {
+            "id": 2, 
+            "titulo": "Miniatura Darthveider", 
+            "preco": "R$ 60,00", 
+            "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
+            "categoria": "StarWars" , 
+            "texto" : "Originalmente um escravo em Tatooine, Anakin Skywalker era um Jedi profetizado para trazer equilíbrio à Força. Ele é atraído para o lado negro da Força pelo Chanceler Sheev Palpatine/Darth Sidious e se torna um Lorde Sith, assumindo o título de Darth Vader. Após uma batalha de sabre de luz com seu ex-mentor Obi-Wan Kenobi em Mustafar, na qual ele fica gravemente ferido, Vader é transformado em um ciborgue. Ele então serve ao Império Galáctico por mais de duas décadas como seu principal executor. Vader se redime salvando seu filho, Luke Skywalker, e matando Palpatine, sacrificando sua própria vida no processo. Ele também é o marido secreto de Padmé Amidala, o pai biológico da princesa Leia, e o avô de Kylo Ren (Ben Solo). Na continuidade não canônica de Star Wars, ele também é avô de Ben Skywalker, seu epônimo Anakin Solo, Jaina Solo e Darth Caedus (Jacen Solo), e bisavô de Allana Solo."
+        },
+        {
+            "id": 3, 
+            "titulo": "Miniatura Mestre Yoda", 
+            "preco": "R$ 60,00", 
+            "imagemDoProduto": "https://http2.mlstatic.com/D_NQ_NP_830635-MLB49150487549_022022-O.webp", 
+            "categoria": "StarWars" , 
+            "texto" : "Medindo 76 centímetros de altura, Yoda é um membro de uma espécie de nome desconhecido. Ele foi o Grão Mestre da Ordem Jedi durante as Guerras Clônicas, um dos membros mais importantes do Alto Conselho Jedi nos últimos dias da República Galáctica, e um dos mais sábios e poderosos Jedi de todos os tempos. Tendo vivido por muito tempo (veio a falecer com aprox. 900 anos de idade), ele tinha excepcionais habilidades no combate de sabre de luz, onde usava as técnicas acrobáticas da Forma IV, além de um fenomenal conhecimento sobre a Força. De 300 ABY até 19 ABY ele treinou quase todos os Jedi da Galáxia — como Grande Mestre, ele instruia todos os Younglings do Templo Jedi antes deles serem adotados por um mestre, tendo Anakin Skywalker sido uma exceção quanto a isso."
+        },
+        {
+            "id": 4, 
+            "titulo": "Mini Darthveider", 
+            "preco": "R$ 60,00", 
+            "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
+            "categoria": "StarWars" , 
+            "texto" : "Darth Vader é um personagem fictício da franquia Star Wars. O personagem é o antagonista central da trilogia original e, como Anakin Skywalker, é um dos principais protagonistas de toda a trilogia prequela. O criador de Star Wars, George Lucas, se referiu coletivamente aos seis primeiros filmes episódicos da franquia.[1] Ele se tornou um dos vilões mais icônicos da cultura popular e foi listado entre os maiores vilões e personagens fictícios de todos os tempos"
+        },
+        {
+            "id": 5, 
+            "titulo": "Mestre Yoda Miniatura", 
+            "preco": "R$ 60,00", 
+            "imagemDoProduto": "https://img.olx.com.br/images/28/284253407934295.jpg", 
+            "categoria": "StarWars" , 
+            "texto" : "Yoda era capaz de bloquear o relâmpago da Força desarmado e um formidável praticante do combate de sabre de luz; sua escolha preferida era a Forma IV - Ataru - a qual alcançou o máximo desenvolvimento. A Forma IV permitia ultrapassar suas limitações de tamanho e alcance. Ele era um espadachim excepcional, com incrível velocidade e destreza, saltando pelo ar e girando quando ele batia em uma defesa do inimigo. Yoda era um grande contribuidor para o alto nível de estratégia Jedi, e era um diplomata social comparável a Mace Windu. Mestre Yoda podia controlar indivíduos tolos como o Capitão Typho e entrar nas mentes das outras, telecineticamente levantar objetos enormes, incluindo naves de pouso C-9979, e usar o Empurrão da Força ou a Onda da Força. Ele também era capaz do Arremesso de Sabre, como é demonstrado em seu retorno ao Templo Jedi durante o Grande Purgo Jedi. "
+        },
+        {
+            "id": 6, 
+            "titulo": "Miniatura Luke", 
+            "preco": "R$ 60,00", 
+            "imagemDoProduto": "https://m.media-amazon.com/images/I/41Uu0KIeZ6L._AC_SX569_.jpg", 
+            "categoria": "StarWars" , 
+            "texto" : "A Nintendo Co., Ltd. (任天堂株式会社 Nintendō Kabushiki Gaisha?) é uma desenvolvedora e publicadora japonesa de jogos eletrônicos e consoles sediada em Quioto. Foi fundada em setembro de 1889 pelo artesão Fusajiro Yamauchi e originalmente era uma fabricante de cartas de baralho tradicionais japonesas. A Nintendo continuou nesse ramo por mais de meio século, no caminho passando por períodos de sucesso e dificuldade, começando a se aventurar em novos negócios a partir da década de 1960. A empresa finalmente entrou no mercado de jogos eletrônicos em 1977 com o lançamento do console Color TV-Game."
+        },
+        {
+            "id": 7, 
+            "titulo": "Controle Branco Console", 
+            "preco": "R$ 70,00", 
+            "imagemDoProduto": "https://a-static.mlcdn.com.br/1500x1500/controle-com-fio-para-console-360-e-pc-slim-joystick-dex/yesshopeletronicos/12800064424/45a113b3f949c5761bb85b39ca02c250.jpg", 
+            "categoria": "consoles" , 
+            "texto" : "Seu console seguinte foi o Nintendo Entertainment System, lançado em 1983 no Japão e dois anos depois no resto do mundo. Ele foi um enorme sucesso comercial e popularizou várias franquias da empresa, como Donkey Kong, Super Mario, The Legend of Zelda e Metroid. Ele foi sucedido por outros consoles de sucesso, como Super Nintendo Entertainment System e a linha Game Boy, que reafirmaram a dominância da Nintendo no mercado. Entretanto, a ascensão do PlayStation e depois do Xbox na virada do século fez com que o Nintendo 64 e Nintendo GameCube fossem considerados fracassos comerciais."
+        },
+        {
+            "id": 8, 
+            "titulo": "Console e Controle", 
+            "preco": "R$ 70,00", 
+            "imagemDoProduto": "https://images.tcdn.com.br/img/img_prod/720337/console_xbox_series_s_512gb_ssd_1_controle_1013_1_4b3f3b18a1c2f098ff3c8d033f5bfb9f.jpg", 
+            "categoria": "consoles" , 
+            "texto" : "A Nintendo mudou sua estratégia de mercado e procurou alcançar um público não-jogador, o que levou ao desenvolvimento da linha Nintendo DS e do Wii, que foram dois enormes sucessos que superaram os concorrentes diretos da empresa. Eles foram sucedidos pela linha Nintendo 3DS e Wii U, que não alcançaram os mesmos números de vendas e colocaram a Nintendo em um período de perdas financeiras. O fracasso do Wii U fez a companhia desenvolver rapidamente um novo console, o Nintendo Switch, que teve números recordes de vendas ao ser lançado em 2017 e ajudou a recuperar a saúde financeira da Nintendo."
+        },
+        {
+            "id": 9, 
+            "titulo": "Nintendo Switch", 
+            "preco": "R$ 70,00", 
+            "imagemDoProduto": "https://t.ctcdn.com.br/G1WZDFACuVCfbHxwSVoPlN00NWM=/fit-in/400x400/filters:format(webp):fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i413091.png", 
+            "categoria": "consoles" , 
+            "texto" : "A empresa também possui várias divisões, subsidiárias e afiliadas, para as quais delega a responsabilidade de desenvolver e distribuir parte de seus produtos, também sendo parceira de negócios na The Pokémon Company e HAL Laboratory. A Nintendo e suas produções já receberam diferentes prêmios da indústria de jogos eletrônicos, incluindo em categorias do Game Developers Choice Awards, British Academy Games Awards e The Game Awards. É também uma das empresas japonesas de maior riqueza e valor de mercado, além de possuir uma política de responsabilidade social considerada uma das de melhor reputação do mundo."
+        },
+        {
+            "id": 10, 
+            "titulo": "Playstation 4", 
+            "preco": "R$ 70,00", 
+            "imagemDoProduto": "https://http2.mlstatic.com/D_NQ_NP_797532-MLA51827540871_102022-O.webp", 
+            "categoria": "consoles" , 
+            "texto" : "A Nintendo na época também produzia e vendia outros tipos jogos de cartas, como um conjunto dedicado a poesias Hyakunin Isshu[9] e outros no estilo ocidental, os primeiros de seu tipo produzidos no Japão.[10] A empresa teve um início bem sucedido, porém logo começou a passar por dificuldades financeiras, pois o processo de fabricação era lento e custoso, conduzindo a preços altos. Outros fatores de risco incluíam o mercado de nicho limitado em que a empresa estava inserida e a grande durabilidade das cartas, este último um aspecto que impactou as vendas devido à baixa taxa de reposição dos produtos. Como solução a empresa reduziu seus preços e começou a produzir cartas de menor qualidade chamadas tengu.[9] Outra medida foi começar a oferecer seus produtos em outras cidades, como Osaka, onde grandes quantidades de dinheiro eram movimentadas em jogos de cartas e os empresários locais renovavam quase continuamente os baralhos, evitando assim suspeitas de marcação."
+        },
+        {
+            "id": 11, 
+            "titulo": "Game Boy", 
+            "preco": "R$ 70,00", 
+            "imagemDoProduto": "https://rihappy.vtexassets.com/arquivos/ids/4336953-800-auto?v=637934072382870000&width=800&height=auto&aspect=true", 
+            "categoria": "consoles" , 
+            "texto" : "O desenvolvimento do portátil foi iniciado em 1986 por Gunpei Yokoi e a equipe R&D1 da Nintendo japonesa.[2] O objetivo era combinar as características dos jogos do Famicom com a portabilidade do Game & Watch, também produzido por Yokoi.[2] O primeiro protótipo do console foi apresentado à diretoria da Nintendo em 1987, surpreendendo os empresários.[2] O presidente da empresa especulou 25 milhões de unidades vendidas em três anos, mas a quantidade foi de 32 milhões.[2] Foi lançado em 1989 e teve sua primeira alteração estética e tecnológica após oito anos"
+        },
+        {
+            "id": 12, 
+            "titulo": "Console Nintendo Switch", 
+            "preco": "R$ 70,00", 
+            "imagemDoProduto": "https://m.media-amazon.com/images/I/81hxAgURvcL._AC_SX679_.jpg", 
+            "categoria": "consoles" , 
+            "texto" : "A própria Nintendo afirma que seu primeiro baralho ocidental foi colocado no mercado japonês em 1902, porém outros documentos afirmam que a data foi na verdade 1907, logo depois do fim da Guerra Russo-Japonesa.[12] O contexto bélico gerou dificuldades consideráveis para as empresas japonesas, especialmente aquelas relacionadas de alguma forma com o setor de lazer, que foram sujeitas a novos impostos.[13] A companhia mesmo assim resistiu e sobreviveu, estabelecendo em 1907 um acordo com a Nihon Senbai, depois chamada de Japan Tobacco & Salt Corporation, para comercializar suas cartas em várias lojas de cigarros por todo o Japão."
+        },
+        {
+            "id": 13, 
+            "titulo": "Camiseta Eren Jaeger", 
+            "preco": "R$ 50,00", 
+            "imagemDoProduto": "https://cf.shopee.com.br/file/b6b99b6d9fd2143a40499d011b13f1af", 
+            "categoria": "diversos" , 
+            "texto" : "A cultura japonesa da época impunha que a Nintendo deveria continuar uma empresa familiar após a aposentadoria de Yamauchi, porém ele não tinha filhos homens e acabou adotando seu genro Sekiryo Kaneda a fim que este pudesse assumir o negócio. Como resultado, Kaneda adotou o sobrenome Yamauchi no mesmo dia de seu casamento com Tei Yamauchi, em 1907, e sucedeu seu sogro em 1929, como o segundo presidente da Nintendo, então a maior empresa de cartas do Japão.["
+        },
+        {
+            "id": 14, 
+            "titulo": "Pikachu", 
+            "preco": "R$ 50,00", 
+            "imagemDoProduto": "https://cf.shopee.com.br/file/5b38b5fd1ad3075e6135d4743128626e", 
+            "categoria": "diversos" , 
+            "texto" : "Kaneda transformou a empresa em uma sociedade em nome coletivo em 1933, sob o nome de Yamauchi Nintendo Co., Ltd.,[10][15] investindo na construção de uma nova sede próxima do edifício original,[14] não muito distante da estação de trem Toba-kaidō.[16] Seu casamento com Tei Yamauchi também não gerou nenhum filho do sexo masculino, então Kaneda adotou Shikanojo Inaba, um artista que colaborou na produção das cartas da empresa e era casado com sua filha Kimi. Este casal já tinha tido um filho em 1927, Hiroshi Yamauchi. Inaba acabou abandonando sua família e a Nintendo, assim Hiroshi foi nomeado como o sucessor de Kaneda."
+        },
+        {
+            "id": 15, 
+            "titulo": "Sonic", 
+            "preco": "R$ 50,00", 
+            "imagemDoProduto": "https://a-static.mlcdn.com.br/800x560/boneco-elastico-sonic-stretch-heroes-of-goo-jit-zu-sunny/japacolecionaveis/14147p/a7e4adf5407e44ee47b89482285e9965.jpg", 
+            "categoria": "diversos" , 
+            "texto" : "O Game Boy (ゲームボーイ Gēmu Bōi?) é um console portátil desenvolvido pela Nintendo, lançado em 21 de abril de 1989 no Japão, em 31 de julho de 1989 na América do Norte e em 28 de setembro de 1990 na Europa, é o primeiro console da linha Game Boy, foi criado por Gunpei Yokoi e pela Nintendo Research & Development 1, versões redesenhadas do console foram lançadas em 1996 e em 1998, o Game Boy Pocket e o Game Boy Light (somente para o Japão)"
+        },
+        {
+            "id": 16, 
+            "titulo": "Boneca LadyBug", 
+            "preco": "R$ 50,00", 
+            "imagemDoProduto": "https://rihappy.vtexassets.com/arquivos/ids/310269/100125419-1860-boneca-miraculous-ladybug-55-cm-baby-brink-5051006_1.jpg?v=636034144139930000", 
+            "categoria": "diversos" , 
+            "texto" : "As experiências obtidas com as iniciativas anteriores fizeram Yamauchi aumentar o investimento da Nintendo em um departamento de pesquisa e desenvolvimento, que ele deixou aos cuidados de Hiroshi Imanishi, um funcionário que tinha vasta experiência em outras áreas de organização. Gunpei Yokoi juntou-se à equipe em 1969, como o responsável pela coordenação dos projetos em andamento.[14] A experiência de Yokoi na fabricação de dispositivos eletrônicos fez Yamauchi deixá-lo no comando do recém criado departamento de jogos, onde suas invenções deveriam ser produzidas em série.[28] Nesse período uma nova fábrica foi construída em Uji, nos arredores de Quioto.[14] A empresa também começou a distribuir jogos de tabuleiro japoneses clássicos, como shogi, go e mahjong, além de alguns estrangeiros sob a marca Nippon Game.[29] A reestruturação interna preservou algumas das áreas de fabricação de baralhos japoneses"
+        },
+        {
+            "id": 17, 
+            "titulo": "Miniaturas Harry Potter", 
+            "preco": "R$ 50,00", 
+            "imagemDoProduto": "https://cf.shopee.com.br/file/6e4bdc4a9af62187eb44a29b0a1254c6", 
+            "categoria": "diversos" , 
+            "texto" : "O período da Segunda Guerra Mundial foi especialmente negativo para a empresa, pois as autoridades japonesas novamente proibiram a disseminação de jogos de cartas estrangeiros, com a sociedade em geral tendo reduzido seu interesse por atividades recreativas com o objetivo de dar prioridade a outras necessidades. A Nintendo mesmo assim conseguiu se manter de pé, em parte apoiada pela grande injeção econômica resultante do casamento de Hiroshi Yamauchi com Michiko Inaba, oriunda de uma família rica.[18] Kaneda fundou a Marufuku Co., Ltd. em 1947, a fim de produzir em massa e distribuir baralhos no estilo ocidental"
+        },
+        {
+            "id": 18, 
+            "titulo": "Miniatura Todoroki", 
+            "preco": "R$ 50,00", 
+            "imagemDoProduto": "https://www.atacadocollections.com/img/g/boneco-funko-5-star-my-hero-academia-todoroki-shoto-img_81375_1.jpg", 
+            "categoria": "diversos" , 
+            "texto" : "Harry Potter é uma série de sete romances de fantasia escrita pela autora britânica J. K. Rowling. A série narra as aventuras de um jovem chamado Harry James Potter, que descobre aos 11 anos de idade que é um bruxo ao ser convidado para estudar na Escola de Magia e Bruxaria de Hogwarts. O arco de história principal diz respeito às amizades de Harry com outros bruxos de sua idade, como Ron Weasley e Hermione Granger, e também com o diretor de Hogwarts Albus Dumbledore, considerado o maior dos magos, e seus conflitos com o bruxo das trevas Lord Voldemort, que pretende se tornar imortal, conquistar o mundo dos bruxos, subjugar as pessoas não-mágicas e destruir todos aqueles que estão em seu caminho, especialmente Harry Potter, a quem ele considera seu maior rival."
+        }
+    ]

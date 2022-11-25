@@ -1,7 +1,10 @@
 import {React} from "react";
 import styled from 'styled-components';
 import LogoAluraGeek from '../../assets/Logo.png';
-import styles from 'components/CampoTexto'
+// import styles from 'components/CampoTexto'; 
+// import { useHistory } from 'react-router-dom';
+// import { useContext } from 'react';
+// import { MensagemFaleConoscoContext } from "Contextos/Mensagem";
 
 const Logo = styled.img`
     width: 100px;
@@ -149,6 +152,9 @@ background-color: #EAF2FD;
 `
 
 const FaleConosco = () => {
+    // const history = useHistory();
+    // const { nome, setNome, mensagem, setMensagem } = useContext(MensagemFaleConoscoContext);
+
     return (
         <>
         <Tudo>
@@ -168,15 +174,23 @@ const FaleConosco = () => {
     <DivFaleConosco>        
                 <p>Fale conosco</p>
                     <InputNome 
-                            obrigatorio={true}
-                            label="Nome"
+                            // obrigatorio={true}
+                            // label="Nome"
                             placeholder="Nome"
+                            // type="text"
+                            // value={nome}
+                            // onChange={(event) => setNome(event.target.value)}
                             />
                     <InputMensagem
-                             obrigatorio={true}
+                            //  obrigatorio={true}
                              placeholder="Escreva sua mensagem" 
+                            //  value={mensagem}
+                            //  type="text"
+                            //  onChange={(event) => setMensagem(event.target.value)}
                              />
                 <BotaoEnviarMensagem
+                        // disabled={nome.length  < 4}
+                        // onClick={() => history.push('/login')}
                     >Enviar mensagem</BotaoEnviarMensagem>
             </DivFaleConosco>
         </Tudo>

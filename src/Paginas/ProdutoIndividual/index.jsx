@@ -1,13 +1,11 @@
-import Cabecalho from "components/Cabecalho";
 import FaleConosco from "components/FaleConosco";
-import Foot from "components/Rodape";
+import ProdutoClicado from "components/ProdutoClicado";
 
-export default function ProdutoClicado(){
+export default function ProdutoSelecionado(){
     return(
         <>
-            <div>produto babababa</div>
+            <ProdutoClicado />
             <FaleConosco />
-            
         </>
        
     )

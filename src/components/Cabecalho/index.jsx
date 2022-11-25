@@ -14,6 +14,7 @@ const StyledCabecalho = styled.nav`
     padding-top: 25px;
     padding-bottom: 10px;
     width: 100%;
+    background-color: #fff;
 
     @media (max-width: 900px) {
         align-items: center;

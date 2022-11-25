@@ -6,23 +6,24 @@ import Foot from "components/Rodape";
 import TodosOsProdutos from "Paginas/TodosOsProdutos";
 import CadastroProduto from "Paginas/CadastrarProduto";
 import NaoEncontrada from "Paginas/NaoEcontrada";
-import MensagemProvider from "Contextos/Mensagem";
-import ProdutoClicado from "Paginas/ProdutoIndividual";
+import ProdutoClicado from "components/ProdutoClicado";
+import ProdutoSelecionado from "Paginas/ProdutoIndividual";
+import ScrollToTop from "components/ScrollToTop";
 
 function App(){
     return (
         <BrowserRouter>
+        <ScrollToTop />
         <Cabecalho />
             <Routes>
-                {/* <MensagemProvider> */}
                     <Route path="/" element={<PaginaPrincipal />}/>
                     <Route path="/home" element={<PaginaPrincipal />}/>
                     <Route path="/Login" element={<Logando />}/>
                     <Route path="/produtos" element={<TodosOsProdutos />}/>
                     <Route path="/cadastrarproduto" element={<CadastroProduto />}/>
-                    <Route path="/produto" element={<ProdutoClicado />}/>
+                    {/* associar isso ao clique do botão  */}
+                    <Route path="/produto/:id/*" element={<ProdutoSelecionado />}/>
                     <Route path="*" element={<NaoEncontrada />}/>
-                {/* </MensagemProvider> */}
             </Routes>
         <Foot />
         </BrowserRouter>

@@ -1,3 +1,4 @@
+
 .BotaoCadastraProduto {
     background: #2A7AE4;
     border: none;
@@ -6,20 +7,50 @@
     font-style: normal;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 10px;
-    /* width: 150px; */
-    padding: 15px 15px 15px 15px;
     text-decoration: none;
-}
-
-h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    color: #464646;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 
 @media (max-width: 900px){
     .BotaoCadastraProduto {
             height: 50px;
     }
+    .TodosOsProdutos{
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+    .TodosOsProdutos h1 {
+        font-size: 20px;
+    }
+    
+}
+
+@media (min-width: 900px){
+    .TodosOsProdutos {
+        gap: 54rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 110px;
+      
+    }
+}
+
+.TodosOsProdutos{
+    flex-direction: row;
+    display: flex;
+
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #464646; 
+}
+.TodosOsProdutos h1{
+   
+    padding-left: 100px;
+
 }
