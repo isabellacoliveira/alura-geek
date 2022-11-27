@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import LogoAluraGeek from '../../assets/Logo.png';
-import { useLocation } from 'react-router-dom'
+import LogoAluraGeek from 'assets/Logo.png';
+import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components';
 import InputBusca from "components/Busca";
 import BotaoLogin from "components/BotaoDeLogin";
@@ -23,17 +22,18 @@ const StyledCabecalho = styled.nav`
     }
 `
 const Logo = styled.img`
-    
     @media(max-width: 900px){
        text-align: center;
-       width: 25%;
+       width: 50%;
        margin-right: 10px;
     }
 
     @media(min-width: 900px){
         margin-left: 100px;
+       
     }
 `
+
 
 const TrocaLado = styled.div`
     @media (max-width: 900px){
@@ -43,17 +43,17 @@ const TrocaLado = styled.div`
 `
 
 const Cabecalho = () => {
-    const {pathname} = useLocation()
-    console.log(pathname)
-    // const navegar = window.location.path; 
+    const {pathname} = useLocation() 
 
     return (
         <StyledCabecalho>
+            <Link to="/"> 
             <Logo src={LogoAluraGeek} />
+            </Link>
+            
             <TrocaLado>
                 <InputBusca />
-                {/* e de produtos  */}
-                {pathname !== '/login' ? <BotaoLogin /> : null} 
+                {(pathname === '/login' || pathname === '/produtos') ? null : <BotaoLogin />} 
             </TrocaLado>
         </StyledCabecalho>
     );

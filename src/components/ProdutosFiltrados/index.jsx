@@ -1,13 +1,11 @@
-import FaleConosco from "components/FaleConosco";
-import ProdutoCard from "components/ProdutoCard";
+import ProdutoCard from 'components/ProdutoCard';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components'; 
 import produtos from "json/produtos.json";
-import { Link } from "react-router-dom";
-import styled from 'styled-components';
 import IconeSeta from 'assets/iconeSeta.png';
-import ListaDeProdutosFiltrados from "components/ListaDeProdutos";
-import ProdutosFiltrados from "components/ProdutosFiltrados";
+import { useState } from 'react';
 
-const { default: Banner } = require("components/Banner");
+
 
 const ListaDeProdutos = styled.ul`
     padding: 0 6vw 3.625rem;
@@ -73,16 +71,37 @@ const Cima = styled.div`
             }
 `
 
-function PaginaPrincipal() {
-  return (
-    <>
-        <Banner />
-        <ProdutosFiltrados nomeProduto='StarWars'/>
-        <ProdutosFiltrados nomeProduto='consoles'/>
-        <ProdutosFiltrados nomeProduto='diversos'/>
-        <FaleConosco />
-    </>
-  )
-}
+export default function ProdutosFiltrados({nomeProduto}){
+    const [listaProdutos, setListaProdutos] = useState(produtos);
 
-export default PaginaPrincipal;
+
+
+    // function adicionaProduto() {
+    //     setListaProdutos([produtoNovo, ...listaProdutos])
+    // }
+    return (
+        <> 
+        <Cima>
+        <Titulos>{nomeProduto}</Titulos>
+            <Link to="/produtos" className="BotaoVerTudo">
+                Ver tudo
+                <img src={IconeSeta} />
+            </Link>
+            </Cima>
+
+        
+    <ListaDeProdutos>
+         {listaProdutos.map((produto) => (
+                <li key={produto.id}>
+                    {produto.categoria === nomeProduto ?
+                            <ProdutoCard produto={produto} /> 
+                            : null}
+                </li>
+            ))}
+    </ListaDeProdutos>
+  
+        
+        </>
+       
+    )
+}

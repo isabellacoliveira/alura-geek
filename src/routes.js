@@ -9,12 +9,14 @@ import NaoEncontrada from "Paginas/NaoEcontrada";
 import ProdutoClicado from "components/ProdutoClicado";
 import ProdutoSelecionado from "Paginas/ProdutoIndividual";
 import ScrollToTop from "components/ScrollToTop";
+import { CategoriasProvider } from "Contextos/categorias";
 
 function App(){
     return (
         <BrowserRouter>
         <ScrollToTop />
         <Cabecalho />
+        {/* <CategoriasProvider> */}
             <Routes>
                     <Route path="/" element={<PaginaPrincipal />}/>
                     <Route path="/home" element={<PaginaPrincipal />}/>
@@ -25,6 +27,7 @@ function App(){
                     <Route path="/produto/:id/*" element={<ProdutoSelecionado />}/>
                     <Route path="*" element={<NaoEncontrada />}/>
             </Routes>
+            {/* </CategoriasProvider> */}
         <Foot />
         </BrowserRouter>
     )

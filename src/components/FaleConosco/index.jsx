@@ -7,12 +7,21 @@ import LogoAluraGeek from '../../assets/Logo.png';
 // import { MensagemFaleConoscoContext } from "Contextos/Mensagem";
 
 const Logo = styled.img`
-    width: 100px;
-    height: 40px;
-    margin-right: 100px;
+   
     font-family: 'Raleway';
     font-style: normal;
-    margin-top: 30px;
+   
+    @media (min-width: 900px) {
+        width: 100px;
+        height: 40px;
+        margin-right: 100px;
+        margin-top: 30px;
+
+    }
+    @media (max-width: 900px) {
+        width: 50%;
+        padding-top: 10px;
+    }
 `
 
 const LinksPaginas = styled.div`
@@ -33,6 +42,8 @@ const DivLogoELinks = styled.div`
     background-color: #EAF2FD;
     /* width: 100%; */
 
+   
+
     @media(max-width: 900px) {
         display: block;
         flex-direction: row;
@@ -40,6 +51,8 @@ const DivLogoELinks = styled.div`
         width: 100%;
         align-items: center;
         padding-bottom: 20px;
+
+       
     }
 
     @media(min-width: 900px){
@@ -202,20 +215,3 @@ const FaleConosco = () => {
 
 export default FaleConosco; 
 
-// import styles from './BotaoPrincipal.module.css';
-
-// export default function BotaoPrincipal({children, tamanho}){
-//     // esse botão tem os mesmos estilos do botão presente nos posts
-//     // vamos então definir um só componente para ser botão
-//     // agora vamos trocar o botão presente nos cards dos posts 
-//     return (
-//         <button className={`
-//                 ${styles.botaoPrincipal}
-//                 ${styles[tamanho]}
-//         `}>
-//             {/* podemos adicionar uma prop no botao principal, dizendo o nome da classe que você quer adicionar  */}
-//             {/* se o valor de tamanho for lg  */}
-//             { children }
-//         </button>
-//     )
-// }

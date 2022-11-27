@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Criando uma SPA com React e suas bibliotecas
+    O alura geek é uma loja virtual onde você pode cadastrar seus produtos e vizualizar informações sobre os produtos cadastrados
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Página HOME (principal)
+    Nessa página você pode navegar pelos produtos que estão separados por categoria. Ao clicar no botão "login", o usuário é encaminhado para a página de login. Com o botão "ver consoles" o usuário é encaminhado para a página onde ele pode ver somente os consoles. Ao clicar na logo do Alura Geek, o usuário retorna para a parte de início. Você também pode clicar no botão "ver produto" para ser encaminhado para a página do respectivo produto, onde você pode ver mais detalhes sobre ele. 
 
-## Available Scripts
+## Página LOGIN 
+    Aqui o usuário pode preencher as informações solicitadas para realizar um login na página, o usuário pode acessar a página de login clicando no botão de login. 
 
-In the project directory, you can run:
+## Página TODOS OS PRODUTOS 
+    Ao clicar no botão "Ver Tudo" na página home, o usuário é encaminhado para a pagina onde ele pode vizualizar todos os produtos existentes. Nessa página há um botão de "cadastrar produto", onde o usuário é encaminhado para a mesma. 
 
-### `npm start`
+## Página CADASTRAR PRODUTO
+    Aqui, o usuário preenche o formulário, cadastrando um novo produto na parte principal. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Página NOT FOUND 
+    o usuário é encaminhado para essa página, caso digite alguma URL que não existe. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 const BotaoDeLogin = styled.button`
     border: 1px solid #2A7AE4;
@@ -34,9 +34,14 @@ const BotaoDeLogin = styled.button`
 `
 
 const BotaoLogin = () => {
+    const {pathname} = useLocation()
+    console.log(pathname)
+
     return(
         <BotaoDeLogin>
-            <Link to="/login" className="BotaoLogin">Login</Link>
+            <Link to="/login" className="BotaoLogin">
+               {pathname === '/cadastrarproduto' ? <Link to="/produtos" className="BotaoLogin">Menu Administrador</Link> : "Login "}
+            </Link>
         </BotaoDeLogin>
     )
 }

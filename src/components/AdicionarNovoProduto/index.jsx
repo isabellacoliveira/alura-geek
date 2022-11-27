@@ -23,7 +23,7 @@ const CadastroNovoProduto = styled.div`
 
         button {
             width: 420px;
-            height: 30px;
+            height: 60px;
        }
 
        select {
@@ -45,7 +45,7 @@ const CadastroNovoProduto = styled.div`
         }
 
         select {
-            width: 170px;
+            width: 180px;
         }
     }
 
@@ -69,12 +69,12 @@ const CadastroNovoProduto = styled.div`
         color: #FFFFFF;
         border: none;
         background: #2A7AE4;
-     
         margin-top: 20px;
     }
 `
 
 const CadastraProduto = () => {
+    
     return(
         <CadastroNovoProduto>
             <p>Adicionar novo produto</p>
