@@ -1,33 +1,37 @@
 import ProdutoCard from 'components/ProdutoCard';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components'; 
-import produtos from "json/produtos.json";
 import IconeSeta from 'assets/iconeSeta.png';
-import { useState } from 'react';
-
-
+import { useContext, useState } from 'react';
+import { ProdutoContext } from 'Contextos/produtos';
 
 const ListaDeProdutos = styled.ul`
-    padding: 0 6vw 3.625rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
     padding-top: 50px;
+    padding-bottom: 50px;
     margin-top: -2.5rem;
     background: #E5E5E5;
+    gap: 2rem;
+    
 
  li {
     list-style: none;
  }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
         margin-top: 0;
-        padding: 2rem 1.5rem 3.625rem;
+        padding: 2rem 1rem 3rem;
 }
  
-@media (min-width: 744px) {
-        padding: 4rem 6rem 3rem 9rem;
+@media (min-width: 900px) {
+        /* padding: 4rem 6rem 3rem 9rem;  */
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
 }
 `
 
@@ -71,34 +75,39 @@ const Cima = styled.div`
             }
 `
 
-export default function ProdutosFiltrados({nomeProduto}){
-    const [listaProdutos, setListaProdutos] = useState(produtos);
+export default function ProdutosFiltrados({IDcategoria}){
+    const {pathname} = useLocation() 
+    console.log(pathname)
 
+    const { arrayDosProdutos } = useContext(ProdutoContext);
+    IDcategoria = Number(IDcategoria);
 
-
-    // function adicionaProduto() {
-    //     setListaProdutos([produtoNovo, ...listaProdutos])
-    // }
     return (
         <> 
-        <Cima>
-        <Titulos>{nomeProduto}</Titulos>
+        {(pathname === '/home' ||  pathname === '/') ?  <Cima>
+        <Titulos>{IDcategoria ===  1 ? "Star Wars" : IDcategoria == 2 ? "Consoles" : "Diversos"}</Titulos>
             <Link to="/produtos" className="BotaoVerTudo">
                 Ver tudo
                 <img src={IconeSeta} />
             </Link>
-            </Cima>
-
+        </Cima> : <Titulos>Consoles</Titulos> }
         
-    <ListaDeProdutos>
-         {listaProdutos.map((produto) => (
+
+        {(pathname === '/home' ||  pathname === '/') ? <ListaDeProdutos>
+         {arrayDosProdutos.map((produto) => (
                 <li key={produto.id}>
-                    {produto.categoria === nomeProduto ?
+                    {Number(produto.IDcategoria) === IDcategoria ?
                             <ProdutoCard produto={produto} /> 
                             : null}
                 </li>
             ))}
-    </ListaDeProdutos>
+    </ListaDeProdutos> : <ListaDeProdutos> {arrayDosProdutos.map((produto) => (
+        <li key={produto.id}>
+            {Number(produto.IDcategoria) === 2 ? <ProdutoCard produto={produto}/> : null}
+        </li>
+    ))}</ListaDeProdutos>} 
+
+    
   
         
         </>

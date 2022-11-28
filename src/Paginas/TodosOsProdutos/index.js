@@ -37,15 +37,15 @@ export default function TodosOsProdutos(){
             <div className={styles.TodosOsProdutos}>
                 <h1>Todos os produtos</h1>
                 <Link to="/cadastrarproduto" className={styles.BotaoCadastraProduto}>Adicionar Produto</Link>
-               
+
             </div>
-            <ListaDeProdutos >
+            <ListaDeProdutos>
             {produtos.map((produto) => (
                 <li key={produto.id}>
                     <ProdutoCard produto={produto} />
                 </li>
             ))}
-        </ListaDeProdutos>
+            </ListaDeProdutos>
             <FaleConosco />
         </>
        

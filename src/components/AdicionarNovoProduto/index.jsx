@@ -1,6 +1,10 @@
 import styled from 'styled-components';
+import {useNavigate} from 'react-router-dom';
+import { ProdutoContext } from 'Contextos/produtos';
+import { useContext, useState } from 'react';
+import produtos from 'json/produtos.json';
 
-const CadastroNovoProduto = styled.div`
+const CadastroNovoProduto = styled.form`
     background: #E5E5E5;
     text-align: left;
     height: 600px;
@@ -45,7 +49,7 @@ const CadastroNovoProduto = styled.div`
         }
 
         select {
-            width: 180px;
+            width: 230px;
         }
     }
 
@@ -73,23 +77,48 @@ const CadastroNovoProduto = styled.div`
     }
 `
 
-const CadastraProduto = () => {
-    
+export default function CadastraProduto () {
+    const { imagem, setImagem, 
+        categoria, setCategoria, 
+        nomeProduto, setNomeProduto, 
+        preco, setPreco,
+        descricao, setDescricao } = useContext(ProdutoContext);
+
+        const aoSalvar = (evento) => {
+            evento.preventDefault()
+            console.log("Seu produto foi cadastrado"); 
+        }
+        
     return(
-        <CadastroNovoProduto>
+        <CadastroNovoProduto onSubmit={aoSalvar}>
+            
             <p>Adicionar novo produto</p>
-            <input placeholder='Url da imagem'></input>
-            <select placeholder='Categorias'>
-                <option>Star Wars</option>
-                <option>Consoles</option>
-                <option>Diversos</option>
+            <input placeholder='Url da imagem'
+                value={imagem}
+                onChange={(evento) => setImagem(evento.target.value)}
+            />
+            <select placeholder='Categorias'
+             >
+                <option id="1">Star Wars</option>
+                <option id="2">Consoles</option>
+                <option id="3">Diversos</option>
             </select>
-            <input placeholder='Nome do produto'></input>
-            <input placeholder='Preço do produto'></input>
-            <input placeholder='Descrição do produto'></input>
-            <button>Adicionar Produto</button>
+            <input placeholder='Nome do produto'
+                value={nomeProduto}
+                onChange={(evento) => setNomeProduto(evento.target.value)}
+            />
+            <input placeholder='Preço do produto'
+                 value={preco}
+                 onChange={(evento) => setPreco(evento.target.value)}
+            />
+            <input placeholder='Descrição do produto'
+                 value={descricao}
+                 onChange={(evento) => setDescricao(evento.target.value)}
+            />
+            <button 
+            >Adicionar Produto</button>
+    
         </CadastroNovoProduto>
     )
 }
 
-export default CadastraProduto;

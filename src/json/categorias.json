@@ -1,0 +1,17 @@
+
+ [
+    {
+        "titulo": "Star Wars",
+        "id": 1
+    },
+    {
+        "titulo": "Consoles", 
+        "id": 2
+    },
+    {
+        "titulo": "Diversos",
+        "id": 3
+    }
+ ]
+
+

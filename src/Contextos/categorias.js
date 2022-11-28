@@ -1,32 +1,26 @@
-// import React from 'react';
+import produtos from 'json/produtos.json'
+import { createContext, useContext, useEffect, useState } from "react";
+export const CategoriasContext = createContext();
+CategoriasContext.displayName = "Categoria Correspondente";
 
-// import productsService from 'services/productsService';
 
-// const CategoriasContext = React.createContext()
-// CategoriasContext.displayName = 'Categorias'
+export default function CategoriaProvider({children}){
+    const [ categoria, setCategoria ] = useState([]);
+    const [ arrayDosProdutos, setArrayDosProdutos ] = useState(produtos);
 
-// export const CategoriasProvider = ({ children }) => {
-//     const [categorias, setCategorias] = React.useState([])
+    return(
+      <CategoriasContext.Provider
+        value={{
+          categoria,
+          setCategoria,
+          arrayDosProdutos,
+          setArrayDosProdutos
+        }}
+      >
+        {children}
+      </CategoriasContext.Provider>
+    )
+}
 
-//     async function getCategorias() {
-//         try {
-//             const { data } = await productsService.getCategorias()
-//             setCategorias(data)
-//         } catch (error) {
-//         }
-//     }
 
-//     React.useEffect(() => {
-//         getCategorias()
-//     }, [])
 
-//     return (
-//         <CategoriasContext.Provider value={{ categorias, setCategorias }}>
-//             {children}
-//         </CategoriasContext.Provider>
-//     )
-// }
-
-// export function useCategoriasContext() {
-//     return React.useContext(CategoriasContext)
-// }

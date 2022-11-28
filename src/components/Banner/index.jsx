@@ -1,6 +1,6 @@
 import {React} from "react";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
-
 
 const StyledBanner = styled.div`
     width: 100%;
@@ -22,32 +22,47 @@ const BannerHero = styled.div`
       
     }
 `
-const BotaoVerConsole = styled.button`
+
+const VerConsole = styled.button`
     background: #2A7AE4;
     border: none;
-    outline: none;
-    font-family: 'Raleway';
-    font-style: normal;
-    text-align: center;
-    color: #FFFFFF;
+    width: 130px;
+    height: 60px;
+    .BotaoVerConsole {
+        
+        border: none;
+        outline: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
 
     @media (max-width: 900px){
-        width: 100px;
-        height: 50px;
+       .BotaoVerConsole{
+         width: 100px;
+         height: 50px;
     }
+}
 
     @media (min-width: 900px){
-        width: 120px;
-        height: 51px;
+        .BotaoVerConsole{
+            width: 120px;
+            height: 90px;
+        }
+        
     }
-`
+ `
+// const BotaoVerConsole = styled.div`
+    
+// `
 
 const Titulo1 = styled.h1`
     font-weight: bold;
     color: #fff;
     font-family: 'Raleway';
     font-style: normal;
-    /* font-size: 10px; */
 
     @media(max-width: 900px){
         padding-top: 80px;
@@ -83,7 +98,9 @@ export const Banner = () => {
             <BannerHero>
                 <Titulo1>Dezembro Promocional</Titulo1>
                     <Titulo2>Produtos selecionados com 33% de desconto</Titulo2>
-                <BotaoVerConsole>Ver Consoles</BotaoVerConsole>
+                    <VerConsole>
+                        <Link className="BotaoVerConsole" to="/consoles">Ver Consoles</Link>
+                    </VerConsole>
             </BannerHero>
         </StyledBanner>
     )

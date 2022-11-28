@@ -11,7 +11,7 @@ const StyledCabecalho = styled.nav`
     display: flex;
     align-items: center;
     padding-top: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     width: 100%;
     background-color: #fff;
 
@@ -34,7 +34,6 @@ const Logo = styled.img`
     }
 `
 
-
 const TrocaLado = styled.div`
     @media (max-width: 900px){
         flex-direction: row-reverse;
@@ -53,7 +52,7 @@ const Cabecalho = () => {
             
             <TrocaLado>
                 <InputBusca />
-                {(pathname === '/login' || pathname === '/produtos') ? null : <BotaoLogin />} 
+                {(pathname === '/login' || pathname === '/produtos' || pathname === `/produto/1` ) ? null : <BotaoLogin />} 
             </TrocaLado>
         </StyledCabecalho>
     );

@@ -1,10 +1,6 @@
 import {React} from "react";
 import styled from 'styled-components';
 import LogoAluraGeek from '../../assets/Logo.png';
-// import styles from 'components/CampoTexto'; 
-// import { useHistory } from 'react-router-dom';
-// import { useContext } from 'react';
-// import { MensagemFaleConoscoContext } from "Contextos/Mensagem";
 
 const Logo = styled.img`
    

@@ -1,26 +1,39 @@
-// async function addProduto(newProduto) {
-//     newProduto.price = parseFloat(newProduto.price)
-//     newProduto.idCategoria = parseInt(newProduto.idCategoria)
-
-//     await produtosService.addProduto(newProduto)
-//     newProduto.id = produtos.length + 1
-//     setProductos([...produtos, newProduto])
-//     toast(`${newProduto.titulo} adicionado com sucesso`)
-//     return newProduto
-// }
-
-// React.useEffect(() => {
-//     getProdutos()
-// }, [])
-
-// return (
-//     <ProdutosContext.Provider value={{ produtos, setProdutos, addProduto }}>
-//         {children}
-//     </ProdutosContext.Provider>
-// )
-// }
+import produtos from 'json/produtos.json';
+import ProdutoCard from "components/ProdutoCard";
+import { createContext, useState } from "react";
+export const ProdutoContext = createContext();
+ProdutoContext.displayName = "Produto Cadastrado";
 
 
-// export function useProdutosContext() {
-// return React.useContext(ProdutosContext)
-// }
+export default function ProdutoProvider({children}){
+    const [imagem, setImagem ] = useState('');
+    const [categoria, setCategoria ] = useState('');
+    const [nomeProduto, setNomeProduto ] = useState('');
+    const [preco, setPreco] = useState(''); 
+    const [descricao, setDescricao ] = useState('');
+    const [ arrayDosProdutos, setArrayDosProdutos ] = useState(produtos);
+
+    function adicionaProduto(novoProduto){  
+        novoProduto.id = arrayDosProdutos.length + 1
+        setArrayDosProdutos([...arrayDosProdutos, novoProduto])
+        return novoProduto
+    }
+
+
+    return(
+        <>
+        <ProdutoContext.Provider
+            value={{
+                arrayDosProdutos,
+                setArrayDosProdutos, 
+                nomeProduto,
+                setNomeProduto
+            }}
+        >
+            {children}
+
+        </ProdutoContext.Provider>
+        </>
+        
+    )
+};
