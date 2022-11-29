@@ -161,8 +161,7 @@ background-color: #EAF2FD;
 `
 
 const FaleConosco = () => {
-    // const history = useHistory();
-    // const { nome, setNome, mensagem, setMensagem } = useContext(MensagemFaleConoscoContext);
+
 
     return (
         <>
@@ -183,23 +182,12 @@ const FaleConosco = () => {
     <DivFaleConosco>        
                 <p>Fale conosco</p>
                     <InputNome 
-                            // obrigatorio={true}
-                            // label="Nome"
                             placeholder="Nome"
-                            // type="text"
-                            // value={nome}
-                            // onChange={(event) => setNome(event.target.value)}
                             />
                     <InputMensagem
-                            //  obrigatorio={true}
                              placeholder="Escreva sua mensagem" 
-                            //  value={mensagem}
-                            //  type="text"
-                            //  onChange={(event) => setMensagem(event.target.value)}
                              />
                 <BotaoEnviarMensagem
-                        // disabled={nome.length  < 4}
-                        // onClick={() => history.push('/login')}
                     >Enviar mensagem</BotaoEnviarMensagem>
             </DivFaleConosco>
         </Tudo>

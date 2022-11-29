@@ -2,7 +2,7 @@ import ProdutoCard from 'components/ProdutoCard';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components'; 
 import IconeSeta from 'assets/iconeSeta.png';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { ProdutoContext } from 'Contextos/produtos';
 
 const ListaDeProdutos = styled.ul`
@@ -11,22 +11,19 @@ const ListaDeProdutos = styled.ul`
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: -2.5rem;
-    background: #E5E5E5;
-    gap: 2rem;
-    
 
  li {
     list-style: none;
+    padding-right: 8px;
+    padding-top: 10px;
  }
 
 @media (max-width: 900px) {
-        margin-top: 0;
+        margin: 0 ;
         padding: 2rem 1rem 3rem;
 }
  
 @media (min-width: 900px) {
-        /* padding: 4rem 6rem 3rem 9rem;  */
         display: flex;
         flex-direction: row;
         margin: 0 auto;
@@ -45,7 +42,7 @@ const Titulos = styled.h1`
         }
 `
 const Cima = styled.div`
-            background: #E5E5E5;
+            
             display: flex;
             flex-direction: row;
 
@@ -77,7 +74,6 @@ const Cima = styled.div`
 
 export default function ProdutosFiltrados({IDcategoria}){
     const {pathname} = useLocation() 
-    console.log(pathname)
 
     const { arrayDosProdutos } = useContext(ProdutoContext);
     IDcategoria = Number(IDcategoria);
@@ -85,30 +81,30 @@ export default function ProdutosFiltrados({IDcategoria}){
     return (
         <> 
         {(pathname === '/home' ||  pathname === '/') ?  <Cima>
-        <Titulos>{IDcategoria ===  1 ? "Star Wars" : IDcategoria == 2 ? "Consoles" : "Diversos"}</Titulos>
+        <Titulos>{IDcategoria ===  1 ? "Star Wars" : IDcategoria === 2 ? "Consoles" : "Diversos"}</Titulos>
             <Link to="/produtos" className="BotaoVerTudo">
                 Ver tudo
-                <img src={IconeSeta} />
+                <img src={IconeSeta}
+                    alt="icone de uma seta"
+                />
             </Link>
         </Cima> : <Titulos>Consoles</Titulos> }
         
-
-        {(pathname === '/home' ||  pathname === '/') ? <ListaDeProdutos>
-         {arrayDosProdutos.map((produto) => (
+      
+            {(pathname === '/home' ||  pathname === '/') ? <ListaDeProdutos>
+                {arrayDosProdutos.map((produto) => (
+                        <li key={produto.id}>
+                            {Number(produto.IDcategoria) === IDcategoria ?
+                                    <ProdutoCard produto={produto} /> 
+                                    : null}
+                        </li>
+                    ))}
+            </ListaDeProdutos> : <ListaDeProdutos> {arrayDosProdutos.map((produto) => (
                 <li key={produto.id}>
-                    {Number(produto.IDcategoria) === IDcategoria ?
-                            <ProdutoCard produto={produto} /> 
-                            : null}
+                    {Number(produto.IDcategoria) === 2 ? <ProdutoCard produto={produto}/> : null}
                 </li>
-            ))}
-    </ListaDeProdutos> : <ListaDeProdutos> {arrayDosProdutos.map((produto) => (
-        <li key={produto.id}>
-            {Number(produto.IDcategoria) === 2 ? <ProdutoCard produto={produto}/> : null}
-        </li>
-    ))}</ListaDeProdutos>} 
+            ))}</ListaDeProdutos>} 
 
-    
-  
         
         </>
        

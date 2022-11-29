@@ -1,15 +1,15 @@
 
  [
     {
-        "titulo": "Star Wars",
+        "titulo": "StarWars",
         "id": 1
     },
     {
-        "titulo": "Consoles", 
+        "titulo": "consoles", 
         "id": 2
     },
     {
-        "titulo": "Diversos",
+        "titulo": "diversos",
         "id": 3
     }
  ]

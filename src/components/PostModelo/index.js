@@ -2,24 +2,19 @@ import styles from './PostModelo.module.css';
 import produtos from 'json/produtos.json';
 import { useParams } from 'react-router-dom';
 import ProdutoCard from 'components/ProdutoCard';
-// import NaoEncontrada from 'Paginas/NaoEcontrada';
 
-export default function PostModelo({ children, titulo, preco, categoria }) {
+export default function PostModelo({ children, titulo, preco }) {
     const parametros = useParams()
+
     const produto = produtos.find((produto) => {
         return produto.id === Number(parametros.id);
     })
-
-    // if(!produto){
-    //     return <NaoEncontrada />
-    // }
 
     const produtosRecomendados = produtos
         .filter((produto) => produto.id !== Number(parametros.id))
         .sort((a, b) => b.id - a.id)
         .slice(0, 6);
 
-        console.log(produtosRecomendados)
 
     return (
         <>

@@ -4,10 +4,8 @@ import IniciarSessao from "components/IniciarSessão";
 export default function Logando(){
     return(
         <>
-        <IniciarSessao />
-         <FaleConosco 
-
-         />
+            <IniciarSessao />
+            <FaleConosco/>
         </>
        
     )

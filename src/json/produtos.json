@@ -3,7 +3,7 @@
         {
             "id": 1, 
             "titulo": "Capacete Stormtrooper",
-                        "IDcategoria": 1, 
+            "IDcategoria": 1, 
             "preco": "R$ 60,00", 
             "imagemDoProduto": "https://m.media-amazon.com/images/I/71kJWVXYDZL._AC_SX679_.jpg", 
             "categoria": "StarWars",
@@ -12,7 +12,7 @@
         {
             "id": 2, 
             "titulo": "Miniatura Darthveider", 
-                        "IDcategoria": 1,
+            "IDcategoria": 1,
             "preco": "R$ 60,00", 
             "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
             "categoria": "StarWars" , 
@@ -21,7 +21,7 @@
         {
             "id": 3, 
             "titulo": "Miniatura Mestre Yoda",
-                        "IDcategoria": 1, 
+            "IDcategoria": 1, 
             "preco": "R$ 60,00", 
             "imagemDoProduto": "https://http2.mlstatic.com/D_NQ_NP_830635-MLB49150487549_022022-O.webp", 
             "categoria": "StarWars" , 
@@ -30,7 +30,7 @@
         {
             "id": 4, 
             "titulo": "Mini Darthveider",
-                        "IDcategoria": 1, 
+            "IDcategoria": 1, 
             "preco": "R$ 60,00", 
             "imagemDoProduto": "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/f/i/figura-olympus-hasbro-star-wars-darth-vader_638678.jpg", 
             "categoria": "StarWars" , 
@@ -39,10 +39,10 @@
         {
             "id": 5, 
             "titulo": "Mestre Yoda Miniatura",
-                        "IDcategoria": 1, 
+            "IDcategoria": 1, 
             "preco": "R$ 60,00", 
             "imagemDoProduto": "https://img.olx.com.br/images/28/284253407934295.jpg", 
-            "categoria": "StarWars" , 
+            "categoria": "StarWars", 
             "texto" : "Yoda era capaz de bloquear o relâmpago da Força desarmado e um formidável praticante do combate de sabre de luz; sua escolha preferida era a Forma IV - Ataru - a qual alcançou o máximo desenvolvimento. A Forma IV permitia ultrapassar suas limitações de tamanho e alcance. Ele era um espadachim excepcional, com incrível velocidade e destreza, saltando pelo ar e girando quando ele batia em uma defesa do inimigo. Yoda era um grande contribuidor para o alto nível de estratégia Jedi, e era um diplomata social comparável a Mace Windu. Mestre Yoda podia controlar indivíduos tolos como o Capitão Typho e entrar nas mentes das outras, telecineticamente levantar objetos enormes, incluindo naves de pouso C-9979, e usar o Empurrão da Força ou a Onda da Força. Ele também era capaz do Arremesso de Sabre, como é demonstrado em seu retorno ao Templo Jedi durante o Grande Purgo Jedi. "
         },
         {
@@ -102,7 +102,7 @@
         {
             "id": 12, 
             "titulo": "Console Nintendo Switch",
-                        "IDcategoria": 2, 
+            "IDcategoria": 2, 
             "preco": "R$ 70,00", 
             "imagemDoProduto": "https://m.media-amazon.com/images/I/81hxAgURvcL._AC_SX679_.jpg", 
             "categoria": "consoles" , 
@@ -159,7 +159,7 @@
             "IDcategoria": 3,
             "preco": "R$ 50,00", 
             "imagemDoProduto": "https://www.atacadocollections.com/img/g/boneco-funko-5-star-my-hero-academia-todoroki-shoto-img_81375_1.jpg", 
-            "categoria": "diversos" , 
+            "categoria": "diversos", 
             "texto" : "Harry Potter é uma série de sete romances de fantasia escrita pela autora britânica J. K. Rowling. A série narra as aventuras de um jovem chamado Harry James Potter, que descobre aos 11 anos de idade que é um bruxo ao ser convidado para estudar na Escola de Magia e Bruxaria de Hogwarts. O arco de história principal diz respeito às amizades de Harry com outros bruxos de sua idade, como Ron Weasley e Hermione Granger, e também com o diretor de Hogwarts Albus Dumbledore, considerado o maior dos magos, e seus conflitos com o bruxo das trevas Lord Voldemort, que pretende se tornar imortal, conquistar o mundo dos bruxos, subjugar as pessoas não-mágicas e destruir todos aqueles que estão em seu caminho, especialmente Harry Potter, a quem ele considera seu maior rival."
         }
  ]

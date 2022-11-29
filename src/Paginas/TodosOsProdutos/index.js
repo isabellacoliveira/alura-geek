@@ -1,10 +1,11 @@
 import FaleConosco from "components/FaleConosco";
-import PaginaPrincipal from "Paginas/PaginaPrincipal";
 import { Link } from "react-router-dom";
 import styles from './TodosOsProdutos.module.css'; 
 import styled from 'styled-components'; 
 import produtos from "json/produtos.json";
 import ProdutoCard from "components/ProdutoCard";
+import { useContext } from "react";
+import { ProdutoContext } from "Contextos/produtos";
 
 
 const ListaDeProdutos = styled.ul`
@@ -32,15 +33,17 @@ const ListaDeProdutos = styled.ul`
 `
 
 export default function TodosOsProdutos(){
+    const { arrayDosProdutos } = useContext(ProdutoContext);
     return(
         <>
             <div className={styles.TodosOsProdutos}>
                 <h1>Todos os produtos</h1>
                 <Link to="/cadastrarproduto" className={styles.BotaoCadastraProduto}>Adicionar Produto</Link>
-
+                
             </div>
+
             <ListaDeProdutos>
-            {produtos.map((produto) => (
+            {arrayDosProdutos.map((produto) => (
                 <li key={produto.id}>
                     <ProdutoCard produto={produto} />
                 </li>

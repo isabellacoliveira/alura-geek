@@ -15,13 +15,11 @@ function App(){
 
     return (
         <ProdutoProvider>
-        
-        <BrowserRouter>
-        <ScrollToTop />
-        <Cabecalho />
-            <Routes>
-                  
-                    <Route path="/" element={<PaginaPrincipal />}/>
+            <BrowserRouter>
+                <ScrollToTop />
+                <Cabecalho />
+                <Routes>
+                    <Route path="/" exact element={<PaginaPrincipal />}/>
                     <Route path="/home" element={<PaginaPrincipal />}/>
                     <Route path="/Login" element={<Logando />}/>
                     <Route path="/produtos" element={<TodosOsProdutos />}/>
@@ -29,15 +27,10 @@ function App(){
                     <Route path="/cadastrarproduto" element={<CadastroProduto />}/>
                     <Route path="/produto/:id/*" element={<ProdutoSelecionado />}/>
                     <Route path="*" element={<NaoEncontrada />}/>
-                    
-            </Routes>
-           
-        <Foot />
-        </BrowserRouter>
-    
+                </Routes>
+                <Foot />
+            </BrowserRouter>
         </ProdutoProvider>
-        
-       
     )
 }
 

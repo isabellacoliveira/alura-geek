@@ -94,7 +94,6 @@ const BotaoAparece = styled.button`
 
 const InputBusca = () => {
     const [ fazAparecer, setFazAparecer ] = useState(true);
-    // const apareceOuEsconde  = () => setFazAparecer(true)
     
     function mostraBarra(){
         setFazAparecer(!fazAparecer)
@@ -104,9 +103,7 @@ const InputBusca = () => {
         <>
             {fazAparecer ? <InputDeBusca placeholder="O que deseja encontrar?"/> : null}
            
-           
             <BotaoAparece onClick={mostraBarra}> 
-                {/* quando a barrinha pequena for = a true, o icone é um x ,  se não, uma lupa  */}
                     <IconePesquisa src={Lupa}/>
                 </BotaoAparece>
             {!fazAparecer ? <BarrinhaPequena placeholder="O que deseja encontrar?"/> : null}

@@ -1,39 +1,32 @@
+import categoriasJson from 'json/categorias.json'; 
 import produtos from 'json/produtos.json';
-import ProdutoCard from "components/ProdutoCard";
 import { createContext, useState } from "react";
 export const ProdutoContext = createContext();
-ProdutoContext.displayName = "Produto Cadastrado";
+ProdutoContext.displayName = "Produtos Cadastrado";
 
 
 export default function ProdutoProvider({children}){
-    const [imagem, setImagem ] = useState('');
-    const [categoria, setCategoria ] = useState('');
-    const [nomeProduto, setNomeProduto ] = useState('');
-    const [preco, setPreco] = useState(''); 
-    const [descricao, setDescricao ] = useState('');
-    const [ arrayDosProdutos, setArrayDosProdutos ] = useState(produtos);
+    const [arrayDosProdutos, setArrayDosProdutos] = useState(produtos);
+    const [categorias, setCategorias] = useState(categoriasJson);
 
     function adicionaProduto(novoProduto){  
+        novoProduto.IDcategoria = parseInt(novoProduto.IDcategoria);
         novoProduto.id = arrayDosProdutos.length + 1
         setArrayDosProdutos([...arrayDosProdutos, novoProduto])
         return novoProduto
     }
 
-
-    return(
-        <>
+    return (
         <ProdutoContext.Provider
             value={{
                 arrayDosProdutos,
                 setArrayDosProdutos, 
-                nomeProduto,
-                setNomeProduto
+                adicionaProduto,
+                categorias
             }}
         >
             {children}
 
         </ProdutoContext.Provider>
-        </>
-        
     )
 };

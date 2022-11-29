@@ -52,7 +52,7 @@ const Cabecalho = () => {
             
             <TrocaLado>
                 <InputBusca />
-                {(pathname === '/login' || pathname === '/produtos' || pathname === `/produto/1` ) ? null : <BotaoLogin />} 
+                {(pathname === '/' || pathname === '/cadastrarproduto') ? <BotaoLogin /> : null}
             </TrocaLado>
         </StyledCabecalho>
     );

@@ -6,8 +6,6 @@ const BotaoDeLogin = styled.button`
     border: 1px solid #2A7AE4;
     box-sizing: border-box;
     height: 40px;
-    /* font-family: 'Raleway';
-    font-style: normal; */
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -35,7 +33,7 @@ const BotaoDeLogin = styled.button`
 
 const BotaoLogin = () => {
     const {pathname} = useLocation()
-    console.log(pathname)
+
 
     return(
         <BotaoDeLogin>

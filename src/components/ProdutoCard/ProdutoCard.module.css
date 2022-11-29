@@ -40,14 +40,11 @@
     font-style: normal;
 }
 
-.imagemIcone{
-    margin-right: 10px;
-}
-
 .soOsIcones {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-bottom: 5px;
 }
 
 .imagensCima img {
@@ -56,12 +53,7 @@
     margin-bottom: 10px;
 }
 
-.imagensCima .ImagemDeCapaDoProduto {
-    position: relative;
-}
 
-.imagensCima .imagemIcone1 .imagemIcone2{
-    position: absolute;
-    padding-right: 20px;
-   
-}
+
+
+

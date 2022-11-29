@@ -28,6 +28,7 @@ const VerConsole = styled.button`
     border: none;
     width: 130px;
     height: 60px;
+    
     .BotaoVerConsole {
         
         border: none;
@@ -54,9 +55,6 @@ const VerConsole = styled.button`
         
     }
  `
-// const BotaoVerConsole = styled.div`
-    
-// `
 
 const Titulo1 = styled.h1`
     font-weight: bold;

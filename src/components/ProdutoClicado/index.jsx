@@ -16,9 +16,8 @@ export default function ProdutoClicado(){
             fotoCapa={`/assets/Produtos/${produto.id}/capa.png`}
             titulo={produto.titulo}
             preco={produto.preco}
-            categoria={produto.categoria}
         >
-            {produto.texto}
+            {produto.texto} 
         </PostModelo> 
         </>
        
