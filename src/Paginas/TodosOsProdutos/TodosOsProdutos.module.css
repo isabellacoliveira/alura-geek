@@ -11,7 +11,11 @@
     padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
-    
+}
+
+.BotaoCadastraProduto:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
 }
 
 @media (max-width: 900px){

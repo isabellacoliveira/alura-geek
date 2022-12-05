@@ -1,18 +1,26 @@
+import Cabecalho from "components/Cabecalho";
 import FaleConosco from "components/FaleConosco";
 import ProdutosFiltrados from "components/ProdutosFiltrados";
-import { ProdutoContext } from "Contextos/produtos";
-import { useContext } from "react";
+import Foot from "components/Rodape";
 const { default: Banner } = require("components/Banner");
 
 
 function PaginaPrincipal() {
   return (
     <>
+        <Cabecalho />
         <Banner />
-        <ProdutosFiltrados IDcategoria='1'/>
-        <ProdutosFiltrados IDcategoria='2'/>
-        <ProdutosFiltrados IDcategoria='3'/>
+        <section id="sessaoStarWars">
+          <ProdutosFiltrados IDcategoria='1'/>
+        </section>
+        <section id="sessaoConsoles">
+          <ProdutosFiltrados IDcategoria='2'/>
+        </section>
+        <section id="sessaoDiversos">
+          <ProdutosFiltrados IDcategoria='3'/>
+        </section>
         <FaleConosco />
+        <Foot />
     </>
   )
 }

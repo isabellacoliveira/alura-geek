@@ -3,7 +3,7 @@ import produtos from 'json/produtos.json';
 import { useParams } from 'react-router-dom';
 import ProdutoCard from 'components/ProdutoCard';
 
-export default function PostModelo({ children, titulo, preco }) {
+export default function PostModelo({ children, nome, preco }) {
     const parametros = useParams()
 
     const produto = produtos.find((produto) => {
@@ -22,11 +22,12 @@ export default function PostModelo({ children, titulo, preco }) {
             <div className={styles.divDaImagem}>
                     <img 
                         src={`/assets/Produtos/${produto.id}/capa.png`}
+                        alt="capa do produto"
             />
                 </div>
                 <div className={styles.conteudoDoProduto}>
                     <h2 className={styles.titulo}>
-                        {titulo}
+                        {nome}
                     </h2>
 
                     <h2 className={styles.preco}>

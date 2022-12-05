@@ -16,6 +16,11 @@ const ListaDeProdutos = styled.ul`
     list-style: none;
     padding-right: 8px;
     padding-top: 10px;
+    
+    &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
  }
 
 @media (max-width: 900px) {
@@ -30,6 +35,7 @@ const ListaDeProdutos = styled.ul`
         justify-content: center;
         align-items: center;
 }
+
 `
 
 const Titulos = styled.h1`
@@ -54,6 +60,11 @@ const Cima = styled.div`
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 700;
+
+            &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
 
             @media (min-width: 900px) {
                 padding-left: 1060px;
@@ -80,7 +91,7 @@ export default function ProdutosFiltrados({IDcategoria}){
 
     return (
         <> 
-        {(pathname === '/home' ||  pathname === '/') ?  <Cima>
+        {pathname === '/home' ?  <Cima>
         <Titulos>{IDcategoria ===  1 ? "Star Wars" : IDcategoria === 2 ? "Consoles" : "Diversos"}</Titulos>
             <Link to="/produtos" className="BotaoVerTudo">
                 Ver tudo
@@ -88,10 +99,10 @@ export default function ProdutosFiltrados({IDcategoria}){
                     alt="icone de uma seta"
                 />
             </Link>
-        </Cima> : <Titulos>Consoles</Titulos> }
+        </Cima> : '' }
         
       
-            {(pathname === '/home' ||  pathname === '/') ? <ListaDeProdutos>
+            <ListaDeProdutos>
                 {arrayDosProdutos.map((produto) => (
                         <li key={produto.id}>
                             {Number(produto.IDcategoria) === IDcategoria ?
@@ -99,11 +110,7 @@ export default function ProdutosFiltrados({IDcategoria}){
                                     : null}
                         </li>
                     ))}
-            </ListaDeProdutos> : <ListaDeProdutos> {arrayDosProdutos.map((produto) => (
-                <li key={produto.id}>
-                    {Number(produto.IDcategoria) === 2 ? <ProdutoCard produto={produto}/> : null}
-                </li>
-            ))}</ListaDeProdutos>} 
+            </ListaDeProdutos> 
 
         
         </>

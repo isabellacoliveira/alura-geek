@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
-import produtos from 'json/produtos.json';
 import PostModelo from "components/PostModelo";
+import { useContext } from "react";
+import { ProdutoContext } from "Contextos/produtos";
 
 export default function ProdutoClicado(){
     const parametros = useParams()
-    console.log(parametros.categoria)
+    const { arrayDosProdutos } = useContext(ProdutoContext);
 
-    const produto = produtos.find((produto) => {
+
+    const produto = arrayDosProdutos.find((produto) => {
         return produto.id === Number(parametros.id);
     })
 
@@ -14,10 +16,10 @@ export default function ProdutoClicado(){
         <>
         <PostModelo
             fotoCapa={`/assets/Produtos/${produto.id}/capa.png`}
-            titulo={produto.titulo}
+            nome={produto.nome}
             preco={produto.preco}
         >
-            {produto.texto} 
+            {produto.descricao} 
         </PostModelo> 
         </>
        

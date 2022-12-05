@@ -1,4 +1,5 @@
-import {React} from "react";
+import {React, useState} from "react";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import LogoAluraGeek from '../../assets/Logo.png';
 
@@ -30,15 +31,17 @@ const LinksPaginas = styled.div`
         padding-top: 10px;
         text-decoration: none;
         color: #464646;
+
+        &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
     }
 `
 
 const DivLogoELinks = styled.div`
     text-align: left;
     background-color: #EAF2FD;
-    /* width: 100%; */
-
-   
 
     @media(max-width: 900px) {
         display: block;
@@ -47,8 +50,6 @@ const DivLogoELinks = styled.div`
         width: 100%;
         align-items: center;
         padding-bottom: 20px;
-
-       
     }
 
     @media(min-width: 900px){
@@ -141,9 +142,19 @@ const InputNome = styled.input`
     width: 150px;
     padding: 15px 15px 15px 15px;
 
+    &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
+
     @media (max-width: 900px){
         height: 50px;
     }
+`
+
+const Formulario = styled.form`
+    display: flex;
+    flex-direction: column;
 `
 
 const Tudo = styled.div`
@@ -161,34 +172,58 @@ background-color: #EAF2FD;
 `
 
 const FaleConosco = () => {
+    const[nomeDoUsuarioNoFaleConosco, setNomeDoUsuarioNoFaleConosco] = useState('');
+    const[mensagem, setMensagem] = useState(''); 
 
-
+    function mensagemEnviada(evento){
+        evento.preventDefault()
+        const mensagem = document.querySelector('#mensagem').value
+        const nomeDoUsuario = document.querySelector('#nomeDoUsuario').value
+        console.log("o nome do usuário é " + nomeDoUsuario)
+        console.log("a mensagem é " + mensagem)
+        alert("sua mensagem foi enviada!")
+        setNomeDoUsuarioNoFaleConosco(""); 
+        setMensagem("");
+    }
     return (
         <>
         <Tudo>
         <DivLogoELinks>
         <Logo src={LogoAluraGeek} />
             <LinksPaginas>
-                <a href="#">Quem somos nós</a>
-                <a href="#">Politica de privacidade</a>
-                <a href="#">Progama fidelidade</a>
-                <a href="#">Nossas lojas</a>
-                <a href="#">Quero ser franqueado</a>
-                <a href="#">Anuncie aqui</a>
+                <Link>Quem somos nós</Link>
+                <Link>Politica de privacidade</Link>
+                <Link>Progama fidelidade</Link>
+                <Link>Nossas lojas</Link>
+                <Link>Quero ser franqueado</Link>
+                <Link>Anuncie aqui</Link>
             </LinksPaginas>
                
     </DivLogoELinks>
     
     <DivFaleConosco>        
                 <p>Fale conosco</p>
+                <Formulario onSubmit={mensagemEnviada}>
                     <InputNome 
                             placeholder="Nome"
+                            id="nomeDoUsuario"
+                            required
+                            value={nomeDoUsuarioNoFaleConosco}
+                            onChange={evento => setNomeDoUsuarioNoFaleConosco(evento.target.value)}
                             />
                     <InputMensagem
                              placeholder="Escreva sua mensagem" 
+                             id="mensagem"
+                             required
+                             value={mensagem}
+                             onChange={evento => setMensagem(evento.target.value)}
                              />
-                <BotaoEnviarMensagem
-                    >Enviar mensagem</BotaoEnviarMensagem>
+                    <BotaoEnviarMensagem
+                            type="submit"
+                            >Enviar mensagem</BotaoEnviarMensagem>
+                    
+                </Formulario>
+                    
             </DivFaleConosco>
         </Tudo>
     

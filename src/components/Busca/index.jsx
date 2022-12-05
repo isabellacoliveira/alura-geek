@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
 import Lupa from 'assets/lupa.png'; 
-// import CloseIcon from '@mui/icons-material/Close';
 
 const InputDeBusca = styled.input`
         background: #F5F5F5;
@@ -37,6 +36,10 @@ const InputDeBusca = styled.input`
             margin-right: 300px;
             margin-left: 40px;
         }
+        &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
 `
 
 const IconePesquisa = styled.img`
@@ -79,7 +82,10 @@ const BarrinhaPequena = styled.input`
         @media(min-width: 900px){
             display: none;
         }
-
+        &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
 
 `
 

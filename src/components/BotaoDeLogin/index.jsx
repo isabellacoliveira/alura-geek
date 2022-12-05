@@ -29,6 +29,11 @@ const BotaoDeLogin = styled.button`
        margin-right: 100px;
        width: 166px;
     }
+
+    &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
 `
 
 const BotaoLogin = () => {

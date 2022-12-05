@@ -1,5 +1,4 @@
 import {React} from "react";
-import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const StyledBanner = styled.div`
@@ -23,36 +22,28 @@ const BannerHero = styled.div`
     }
 `
 
-const VerConsole = styled.button`
+const VerConsole = styled.div`
     background: #2A7AE4;
     border: none;
     width: 130px;
     height: 60px;
     
     .BotaoVerConsole {
-        
         border: none;
         outline: none;
         font-family: 'Raleway';
+        background: none;
         font-style: normal;
         text-align: center;
         color: #FFFFFF;
         text-decoration: none;
-    }
+        padding-top: 22px;
+        padding-left: 25px;
 
-    @media (max-width: 900px){
-       .BotaoVerConsole{
-         width: 100px;
-         height: 50px;
     }
-}
-
-    @media (min-width: 900px){
-        .BotaoVerConsole{
-            width: 120px;
-            height: 90px;
-        }
-        
+    &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
     }
  `
 
@@ -91,13 +82,17 @@ const Titulo2 = styled.h5`
 `
 
 export const Banner = () => {
+    const ScrollTo = () => {
+        const sessao = document.querySelector('#sessaoConsoles')
+        return sessao ? sessao.scrollIntoView() : null
+    }
     return (
         <StyledBanner>
             <BannerHero>
                 <Titulo1>Dezembro Promocional</Titulo1>
                     <Titulo2>Produtos selecionados com 33% de desconto</Titulo2>
                     <VerConsole>
-                        <Link className="BotaoVerConsole" to="/consoles">Ver Consoles</Link>
+                        <button className="BotaoVerConsole" onClick={ScrollTo}>Ver Consoles</button>
                     </VerConsole>
             </BannerHero>
         </StyledBanner>

@@ -76,7 +76,14 @@ const CadastroNovoProduto = styled.form`
 		border: none;
 		background: #2a7ae4;
 		margin-top: 20px;
-	}
+		font-family: 'Raleway';
+            font-style: normal;
+
+		&:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
+}
 `
 
 const InputsDaPagina = styled.input`
@@ -90,9 +97,9 @@ const InputsDaPagina = styled.input`
 export default function CadastraProduto() {
     const [imagemDoProduto, setImagemDoProduto] = useState('');
     const [IDcategoria, setIDCategoria] = useState();
-    const [titulo, setTitulo] = useState('');
+    const [nome, setNome] = useState('');
     const [preco, setPreco] = useState('R$'); 
-    const [texto, setTexto] = useState('');
+    const [descricao, setDescricao] = useState('');
     const [categoria, setCategoria] = useState('');
     const navigate = useNavigate();
 
@@ -101,16 +108,16 @@ export default function CadastraProduto() {
 		categorias
 	} = useContext(ProdutoContext);
 
-	const aoSalvar = (evento) => {
+	const aoSalvar = async evento => {
 		evento.preventDefault();
-        adicionaProduto({ titulo, imagemDoProduto, texto, preco, categoria, IDcategoria })
+        adicionaProduto({ nome, imagemDoProduto, descricao, preco, categoria, IDcategoria })
 		alert("Seu produto foi cadastrado");
-        navigate('/')
+        navigate('/home')
 	};
 
     const handleCategoria = (value) => {
 		let filtraCategoria = categorias.find(categoria => (categoria.id === Number(value)));
-		setCategoria(filtraCategoria.titulo)
+		setCategoria(filtraCategoria.nome)
 		setIDCategoria(value)
     }
 
@@ -118,10 +125,11 @@ export default function CadastraProduto() {
 		<CadastroNovoProduto onSubmit={aoSalvar}>
 			<p>Adicionar novo produto</p>
 			<InputsDaPagina
-				placeholder="Url da imagem"
+				placeholder="Insira a imagem"
 				value={imagemDoProduto}
 				onChange={(evento) => setImagemDoProduto(evento.target.value)}
 				required
+				type="file"
 			/>
 			<select placeholder="Categorias" 
 					onChange={(evento) => handleCategoria(evento.target.value)}
@@ -129,13 +137,13 @@ export default function CadastraProduto() {
 			>
 				<option key='default' value=''>Selecione uma categoria</option>
 				{categorias.map((categoria) => (
-					<option key={categoria.id} value={categoria.id}>{categoria.titulo}</option>
+					<option key={categoria.id} value={categoria.id}>{categoria.nome}</option>
 				))}
 			</select>
 			<InputsDaPagina
 				placeholder="Nome do produto"
-				value={titulo}
-				onChange={(evento) => setTitulo(evento.target.value)}
+				value={nome}
+				onChange={(evento) => setNome(evento.target.value)}
                 required
 				type="text"
 			/>
@@ -144,16 +152,18 @@ export default function CadastraProduto() {
 				value={preco}
 				onChange={(evento) => setPreco(evento.target.value)}
                 required
+				type="text"
 			/>
 			<InputsDaPagina
 				placeholder="Descrição do produto"
-				value={texto}
-				onChange={(evento) => setTexto(evento.target.value)}
+				value={descricao}
+				onChange={(evento) => setDescricao(evento.target.value)}
                 required
+				type="text"
 			/>
-			<button
-                type="submit"
-            >Adicionar Produto</button>
+				<button
+					type="submit"
+				>Adicionar Produto</button>			
 		</CadastroNovoProduto>
 	);
 }

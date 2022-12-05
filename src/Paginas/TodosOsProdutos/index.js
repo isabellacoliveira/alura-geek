@@ -2,10 +2,11 @@ import FaleConosco from "components/FaleConosco";
 import { Link } from "react-router-dom";
 import styles from './TodosOsProdutos.module.css'; 
 import styled from 'styled-components'; 
-import produtos from "json/produtos.json";
 import ProdutoCard from "components/ProdutoCard";
 import { useContext } from "react";
 import { ProdutoContext } from "Contextos/produtos";
+import Cabecalho from "components/Cabecalho";
+import Foot from "components/Rodape";
 
 
 const ListaDeProdutos = styled.ul`
@@ -17,6 +18,11 @@ const ListaDeProdutos = styled.ul`
     padding-top: 50px;
     margin-top: -2.5rem;
     background: #E5E5E5;
+
+    li:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
 
  li {
     list-style: none;
@@ -36,10 +42,10 @@ export default function TodosOsProdutos(){
     const { arrayDosProdutos } = useContext(ProdutoContext);
     return(
         <>
+            <Cabecalho />
             <div className={styles.TodosOsProdutos}>
                 <h1>Todos os produtos</h1>
                 <Link to="/cadastrarproduto" className={styles.BotaoCadastraProduto}>Adicionar Produto</Link>
-                
             </div>
 
             <ListaDeProdutos>
@@ -50,6 +56,7 @@ export default function TodosOsProdutos(){
             ))}
             </ListaDeProdutos>
             <FaleConosco />
+            <Foot />
         </>
        
     )

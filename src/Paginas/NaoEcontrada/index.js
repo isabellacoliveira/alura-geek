@@ -1,12 +1,15 @@
 import styles from './NaoEncontrada.module.css';
 import erro404 from 'assets/errroooo.webp'
 import { useNavigate } from 'react-router-dom';
+import Cabecalho from 'components/Cabecalho';
+import Foot from 'components/Rodape';
 
 export default function NaoEncontrada() {
     const navegar = useNavigate();
 
     return (
         <>
+            <Cabecalho />
             <div className={styles.conteudoContainer}>
                 <span className={styles.texto404}>404</span>
 
@@ -23,7 +26,7 @@ export default function NaoEncontrada() {
                     className={styles.botaoContainer}
                     onClick={() => navegar(-1)}
                 >
-                    <button className='botaoVoltar'>Voltar</button>
+                    <button>Voltar</button>
                 </div>
 
                 <img
@@ -33,6 +36,7 @@ export default function NaoEncontrada() {
                 />
             </div>
             <div className={styles.espacoEmBranco}></div>
+            <Foot />
         </>
 
     )

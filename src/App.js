@@ -1,12 +1,13 @@
+import Entrar from 'Paginas/Entrar';
 import React from 'react';
 import AppRoutes from 'routes';
 
-
 function App() {
-  return (
-    <>
-      <AppRoutes />
-    </>
+    return (
+          <>
+            <Entrar />
+            <AppRoutes />
+          </>
   )
 }
 

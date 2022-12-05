@@ -55,6 +55,11 @@ article {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.postsRecomendados li:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+}
  
 @media (min-width: 900px) {
     article {

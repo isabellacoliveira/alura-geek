@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components';
 import InputBusca from "components/Busca";
 import BotaoLogin from "components/BotaoDeLogin";
+import {CgSearch} from 'react-icons/cg'; 
 
 const StyledCabecalho = styled.nav`
     text-align: center;
@@ -20,6 +21,8 @@ const StyledCabecalho = styled.nav`
         justify-content: center;
         display: flex;
     }
+
+   
 `
 const Logo = styled.img`
     @media(max-width: 900px){
@@ -31,6 +34,10 @@ const Logo = styled.img`
     @media(min-width: 900px){
         margin-left: 100px;
        
+    }
+    &:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
     }
 `
 
@@ -46,13 +53,19 @@ const Cabecalho = () => {
 
     return (
         <StyledCabecalho>
-            <Link to="/"> 
-            <Logo src={LogoAluraGeek} />
+            <Link to="/home"> 
+                 <Logo src={LogoAluraGeek} />
             </Link>
             
             <TrocaLado>
-                <InputBusca />
-                {(pathname === '/' || pathname === '/cadastrarproduto') ? <BotaoLogin /> : null}
+                <InputBusca>
+                <CgSearch 
+                    size={20}
+                    color="#4C4D5F"
+                />
+                </InputBusca>
+               
+                {(pathname === '/home' || pathname === '/cadastrarproduto') ? <BotaoLogin /> : null}
             </TrocaLado>
         </StyledCabecalho>
     );

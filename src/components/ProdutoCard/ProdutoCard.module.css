@@ -8,6 +8,14 @@
     background-color: #E5E5E5;
 }
 
+.divDaImagem img{
+    position: relative;
+}
+
+.soOsIcones{
+    position: absolute;
+}
+
 .CardDoProduto{
     flex-direction: row;
     background-color: #E5E5E5;
@@ -53,7 +61,7 @@
     margin-bottom: 10px;
 }
 
-
+ 
 
 
 
