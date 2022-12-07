@@ -2,6 +2,7 @@ import {React, useState} from "react";
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import LogoAluraGeek from '../../assets/Logo.png';
+import emailjs from '@emailjs/browser'; 
 
 const Logo = styled.img`
    
@@ -177,13 +178,20 @@ const FaleConosco = () => {
 
     function mensagemEnviada(evento){
         evento.preventDefault()
-        const mensagem = document.querySelector('#mensagem').value
-        const nomeDoUsuario = document.querySelector('#nomeDoUsuario').value
-        console.log("o nome do usuário é " + nomeDoUsuario)
-        console.log("a mensagem é " + mensagem)
         alert("sua mensagem foi enviada!")
         setNomeDoUsuarioNoFaleConosco(""); 
         setMensagem("");
+
+        const templateParametros = {
+            from_name: nomeDoUsuarioNoFaleConosco, 
+            message: mensagem
+        }
+        emailjs.send("service_h5ld8bh", "template_e6tjkb7", templateParametros, "ugKUR3e3BFOJG0avi")
+        .then((response) => {
+            console.log("Email enviado", response.status, response.text)
+        }, (err) => {
+            console.log("Email não enviado.", err)
+        })
     }
     return (
         <>

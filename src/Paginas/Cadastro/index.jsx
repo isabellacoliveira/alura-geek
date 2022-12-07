@@ -4,6 +4,7 @@ import Foot from "components/Rodape";
 import { useState } from "react";
 // import { useState } from "react";
 import styled from 'styled-components'; 
+// import Recaptcha from 'react-recaptcha'; 
 
 const CadastroDoUsuario = styled.div`
     width: 100%;
@@ -137,6 +138,14 @@ export default function Cadastro(){
         alert("sucesso")
     }
 
+    // recaptchaLoaded() {
+    //     console.log("sucesso")
+    // }
+
+    constructor = (props) => {
+        this.recaptchaLoaded = this.recaptchaLoaded.bind(this)
+    }
+
     return (
         <>
             <Cabecalho />
@@ -185,6 +194,11 @@ export default function Cadastro(){
                     // onChange={valorDoInput}
 
                 />
+                {/* <Recaptcha
+                    sitekey="6LfWJ1kjAAAAAPFjvv3zEr5cS9sDVCD8UXi9VuT_"
+                    render="explicit"
+                    onloadCallback={this.recaptchaLoaded}
+                /> */}
                 <button 
                     type="submit"
                 >Cadastrar</button>
@@ -195,3 +209,4 @@ export default function Cadastro(){
         </>
     )
 }
+

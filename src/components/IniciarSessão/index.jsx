@@ -15,6 +15,10 @@ const CadastroInicioSessao = styled.div`
     font-style: normal;
     font-weight: bold;
     
+    .cadastroDoUsuario{
+        display: flex;
+        flex-direction: row;
+    }
 
     input{
         background: #FFFFFF;
@@ -62,7 +66,14 @@ const CadastroInicioSessao = styled.div`
         &:hover {
         transform: translateY(-4px);
         cursor: pointer;
+        }
     }
+
+    .cadastre {
+        background: #2A7AE4;
+        height: 30px;
+        width: 300px;
+        margin-left: 10px;
     }
 
      div {
@@ -73,6 +84,7 @@ const CadastroInicioSessao = styled.div`
         text-decoration: none;
         font-weight: normal;
         color: #FFFFFF;
+        width: 30px;
     }
 `
 
@@ -109,10 +121,13 @@ const IniciarSessao = () => {
                 </div>
             </form>
            
-            <p>Não possui cadastro?</p>
-            <div className="cadastro">
-                <Link to='/cadastro' className='tituloCadastrar'>Cadastre-se</Link>
-            </div>
+           <div className='cadastroDoUsuario'>
+                <p>Não possui cadastro?</p>
+                <div className="cadastre">
+                    <Link to='/cadastro' className='tituloCadastrar'>Cadastre-se</Link>
+                </div>
+           </div>
+            
         </CadastroInicioSessao>
     )
 }
