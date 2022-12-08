@@ -4,7 +4,7 @@ import Foot from "components/Rodape";
 import { useState } from "react";
 // import { useState } from "react";
 import styled from 'styled-components'; 
-// import Recaptcha from 'react-recaptcha'; 
+import { ReCAPTCHA } from 'react-google-recaptcha'; 
 
 const CadastroDoUsuario = styled.div`
     width: 100%;
@@ -142,8 +142,11 @@ export default function Cadastro(){
     //     console.log("sucesso")
     // }
 
-    constructor = (props) => {
-        this.recaptchaLoaded = this.recaptchaLoaded.bind(this)
+    // constructor = (props) => {
+    //     this.recaptchaLoaded = this.recaptchaLoaded.bind(this)
+    // }
+    function onChange(value){
+        console.log('Captcha: ', value);
     }
 
     return (
@@ -151,8 +154,6 @@ export default function Cadastro(){
             <Cabecalho />
             <CadastroDoUsuario onSubmit={senhaOk}>
                 <h1>Cadastrar Usuário</h1>
-                {/* {status.tipo === 'success' ? <p style={{ color: "green" }}>{status.mensagem}</p> : ""}
-                {status.tipo === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""} */}
                 <form>
                 <label>Nome</label>
                 <InputGlobal
@@ -194,11 +195,11 @@ export default function Cadastro(){
                     // onChange={valorDoInput}
 
                 />
-                {/* <Recaptcha
-                    sitekey="6LfWJ1kjAAAAAPFjvv3zEr5cS9sDVCD8UXi9VuT_"
-                    render="explicit"
-                    onloadCallback={this.recaptchaLoaded}
-                /> */}
+                <ReCAPTCHA
+                    sitekey ="6LfxBWIjAAAAAKeZUD4W4MPFrKpO23PIXD-znoEl" 
+                    onChange={onChange}
+                    
+                />
                 <button 
                     type="submit"
                 >Cadastrar</button>

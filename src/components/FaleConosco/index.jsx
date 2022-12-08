@@ -186,6 +186,7 @@ const FaleConosco = () => {
             from_name: nomeDoUsuarioNoFaleConosco, 
             message: mensagem
         }
+        
         emailjs.send("service_h5ld8bh", "template_e6tjkb7", templateParametros, "ugKUR3e3BFOJG0avi")
         .then((response) => {
             console.log("Email enviado", response.status, response.text)

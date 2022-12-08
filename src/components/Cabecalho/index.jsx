@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components';
 import InputBusca from "components/Busca";
 import BotaoLogin from "components/BotaoDeLogin";
-import {CgSearch} from 'react-icons/cg'; 
 
 const StyledCabecalho = styled.nav`
     text-align: center;
@@ -58,13 +57,7 @@ const Cabecalho = () => {
             </Link>
             
             <TrocaLado>
-                <InputBusca>
-                <CgSearch 
-                    size={20}
-                    color="#4C4D5F"
-                />
-                </InputBusca>
-               
+                <InputBusca />
                 {(pathname === '/home' || pathname === '/cadastrarproduto') ? <BotaoLogin /> : null}
             </TrocaLado>
         </StyledCabecalho>
